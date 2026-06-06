@@ -1,9 +1,11 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
 import { ShoppingCart, Menu, X } from 'lucide-react';
+import { useCart } from '../context/CartContext';
 
 const Layout: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const { cartCount } = useCart();
 
   return (
     <div className="min-h-screen bg-deep-space text-gallery-white flex flex-col">
@@ -22,9 +24,11 @@ const Layout: React.FC = () => {
           <div className="flex items-center space-x-4">
             <Link to="/cart" className="p-2 hover:bg-muted-slate/10 rounded-full transition-colors relative">
               <ShoppingCart size={20} className="text-gallery-white" />
-              <span className="absolute top-0 right-0 bg-electric-cyan text-deep-space text-[10px] font-bold px-1.5 py-0.5 rounded-full">
-                0
-              </span>
+              {cartCount > 0 && (
+                <span className="absolute top-0 right-0 bg-electric-cyan text-deep-space text-[10px] font-bold px-1.5 py-0.5 rounded-full min-w-[1.25rem] flex items-center justify-center">
+                  {cartCount}
+                </span>
+              )}
             </Link>
             <button 
               className="md:hidden p-2 hover:bg-muted-slate/10 rounded-full transition-colors text-gallery-white"

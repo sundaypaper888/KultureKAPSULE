@@ -1,10 +1,15 @@
-import React from 'react';
-import { useParams, Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { products } from '../data/products';
-import { ChevronLeft, ShoppingBag, Truck, ShieldCheck, Zap } from 'lucide-react';
+import { ChevronLeft, ShoppingBag, Truck, ShieldCheck, Zap, Check } from 'lucide-react';
+import { useCart } from '../context/CartContext';
 
 const ProductDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
+  const navigate = useNavigate();
+  const { addToCart } = useCart();
+  const [isAdded, setIsAdded] = useState(false);
+  
   const product = products.find(p => p.id === id);
 
   if (!product) {
@@ -17,6 +22,12 @@ const ProductDetail: React.FC = () => {
       </div>
     );
   }
+
+  const handleAddToCart = () => {
+    addToCart(product);
+    setIsAdded(true);
+    setTimeout(() => setIsAdded(false), 2000);
+  };
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -89,10 +100,33 @@ const ProductDetail: React.FC = () => {
             </div>
           </div>
 
-          <button className="w-full bg-gallery-white text-deep-space py-6 rounded-full font-bold uppercase tracking-[0.2em] flex items-center justify-center space-x-3 hover:bg-electric-cyan transition-all mb-10 group">
-            <ShoppingBag size={20} className="group-hover:-translate-y-0.5 transition-transform" />
-            <span>Add to Collection</span>
-          </button>
+          <div className="flex flex-col space-y-4 mb-10">
+            <button 
+              onClick={handleAddToCart}
+              disabled={isAdded}
+              className={`w-full py-6 rounded-full font-bold uppercase tracking-[0.2em] flex items-center justify-center space-x-3 transition-all group ${
+                isAdded ? 'bg-electric-cyan text-deep-space' : 'bg-gallery-white text-deep-space hover:bg-electric-cyan'
+              }`}
+            >
+              {isAdded ? (
+                <>
+                  <Check size={20} />
+                  <span>Added to Collection</span>
+                </>
+              ) : (
+                <>
+                  <ShoppingBag size={20} className="group-hover:-translate-y-0.5 transition-transform" />
+                  <span>Add to Collection</span>
+                </>
+              )}
+            </button>
+            <button 
+              onClick={() => { addToCart(product); navigate('/cart'); }}
+              className="w-full py-4 border border-gallery-white/20 rounded-full font-bold uppercase tracking-[0.2em] text-[10px] hover:border-electric-cyan transition-all text-gallery-white"
+            >
+              Express Checkout
+            </button>
+          </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-10 border-t border-muted-slate/10">
             <div className="flex flex-col items-center text-center space-y-2">
