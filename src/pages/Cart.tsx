@@ -5,6 +5,31 @@ import { useCart } from '../context/CartContext';
 
 const Cart: React.FC = () => {
   const { cart, removeFromCart, updateQuantity, cartTotal, cartCount } = useCart();
+  const [loading, setLoading] = React.useState(false);
+
+  const handleCheckout = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch('/api/create-checkout-session', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ cart }),
+      });
+
+      const data = await response.json();
+      if (data.url) {
+        window.location.href = data.url;
+      } else {
+        console.error('Failed to create checkout session');
+        setLoading(false);
+      }
+    } catch (error) {
+      console.error('Checkout error:', error);
+      setLoading(false);
+    }
+  };
 
   if (cart.length === 0) {
     return (
@@ -105,9 +130,13 @@ const Cart: React.FC = () => {
               </div>
             </div>
             
-            <button className="w-full bg-gallery-white text-deep-space py-5 rounded-full font-bold uppercase tracking-[0.2em] flex items-center justify-center space-x-3 hover:bg-electric-cyan transition-all mb-4 group">
-              <span>Checkout Now</span>
-              <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+            <button 
+              onClick={handleCheckout}
+              disabled={loading}
+              className="w-full bg-gallery-white text-deep-space py-5 rounded-full font-bold uppercase tracking-[0.2em] flex items-center justify-center space-x-3 hover:bg-electric-cyan transition-all mb-4 group disabled:opacity-50 disabled:cursor-not-allowed"
+            >
+              <span>{loading ? 'Processing...' : 'Checkout Now'}</span>
+              {!loading && <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />}
             </button>
             
             <p className="text-[10px] text-center text-muted-slate/60 uppercase tracking-widest leading-relaxed">

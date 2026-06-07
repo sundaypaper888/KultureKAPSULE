@@ -5,6 +5,7 @@ import Shop from './pages/Shop';
 import About from './pages/About';
 import Custom from './pages/Custom';
 import Cart from './pages/Cart';
+import Success from './pages/Success';
 import ProductDetail from './pages/ProductDetail';
 import NotFound from './pages/NotFound';
 import { CartProvider } from './context/CartContext';
@@ -20,6 +21,7 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="custom" element={<Custom />} />
             <Route path="cart" element={<Cart />} />
+            <Route path="success" element={<Success />} />
             <Route path="product/:id" element={<ProductDetail />} />
             <Route path="*" element={<NotFound />} />
           </Route>
