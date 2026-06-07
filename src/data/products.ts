@@ -67,9 +67,9 @@ export const products: Product[] = [
   },
   {
     "id": "5",
-    "title": "36 Chambers",
+    "title": "Enter the Wu-Tang (36 Chambers)",
     "artist": "Wu-Tang Clan",
-    "description": "36 Chambers by Wu-Tang Clan, immortalized in museum-quality acrylic.",
+    "description": "Enter the Wu-Tang (36 Chambers) by Wu-Tang Clan, immortalized in museum-quality acrylic.",
     "price": 129,
     "category": "Hip-Hop",
     "type": "single",
@@ -148,8 +148,8 @@ export const products: Product[] = [
   {
     "id": "10",
     "title": "Aquemini",
-    "artist": "Outkast",
-    "description": "Aquemini by Outkast, immortalized in museum-quality acrylic.",
+    "artist": "OutKast",
+    "description": "Aquemini by OutKast, immortalized in museum-quality acrylic.",
     "price": 129,
     "category": "Hip-Hop",
     "type": "single",
@@ -169,7 +169,7 @@ export const products: Product[] = [
     "price": 129,
     "category": "Hip-Hop",
     "type": "single",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/79ea9d5f45c41d82e511c59f0bd8fc5a/1000x1000-000000-80-0-0.jpg",
+    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/1322b9d5248a55034f098802072cfac4/1000x1000-000000-80-0-0.jpg",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",
@@ -185,7 +185,7 @@ export const products: Product[] = [
     "price": 349,
     "category": "Hip-Hop",
     "type": "triptych",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/364f0d4ea4b5452b59e6664b9e5480f0/1000x1000-000000-80-0-0.jpg",
+    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/0d9a24d054cbc5ab11843beed9f1422b/1000x1000-000000-80-0-0.jpg",
     "dimensions": "36\" x 12\" (Three 12\" x 12\" panels)",
     "features": [
       "Museum-quality acrylic",
@@ -227,9 +227,9 @@ export const products: Product[] = [
   },
   {
     "id": "15",
-    "title": "Good Kid M.A.A.D City",
+    "title": "good kid, m.A.A.d city",
     "artist": "Kendrick Lamar",
-    "description": "Good Kid M.A.A.D City by Kendrick Lamar, immortalized in museum-quality acrylic.",
+    "description": "good kid, m.A.A.d city by Kendrick Lamar, immortalized in museum-quality acrylic.",
     "price": 129,
     "category": "Hip-Hop",
     "type": "single",
@@ -489,7 +489,7 @@ export const products: Product[] = [
     "price": 129,
     "category": "Classical",
     "type": "single",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/6f8e9e8adf94f50fca0ade4d5a135e4e/1000x1000-000000-80-0-0.jpg",
+    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/9845676d3d3aeca1c895c344e32643be/1000x1000-000000-80-0-0.jpg",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",
@@ -505,7 +505,7 @@ export const products: Product[] = [
     "price": 349,
     "category": "Classical",
     "type": "triptych",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/d0176cec5970e8608ff4f51ccf08dfe7/1000x1000-000000-80-0-0.jpg",
+    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/0abe85cf1022666c2062b0540f616246/1000x1000-000000-80-0-0.jpg",
     "dimensions": "36\" x 12\" (Three 12\" x 12\" panels)",
     "features": [
       "Museum-quality acrylic",
@@ -537,7 +537,7 @@ export const products: Product[] = [
     "price": 129,
     "category": "Classical",
     "type": "single",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/d0f0455f9b0ac1b07b06499a0e94a0cb/1000x1000-000000-80-0-0.jpg",
+    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/c0ae4d9dd2aead5b5050acfc0514d053/1000x1000-000000-80-0-0.jpg",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",
@@ -553,7 +553,7 @@ export const products: Product[] = [
     "price": 129,
     "category": "Classical",
     "type": "single",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/6f8e9e8adf94f50fca0ade4d5a135e4e/1000x1000-000000-80-0-0.jpg",
+    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/defcf8af8193f81253b0240c5eb812a8/1000x1000-000000-80-0-0.jpg",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",
@@ -601,7 +601,7 @@ export const products: Product[] = [
     "price": 129,
     "category": "Classical",
     "type": "single",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/fcdcdb0ac29039eaea40c9878a51c0be/1000x1000-000000-80-0-0.jpg",
+    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/1b4ae377fdd6dda2aa304ef439464972/1000x1000-000000-80-0-0.jpg",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",
@@ -617,7 +617,7 @@ export const products: Product[] = [
     "price": 349,
     "category": "Classical",
     "type": "triptych",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/93e76b9c09736eec948a4919f98f9b10/1000x1000-000000-80-0-0.jpg",
+    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/4b3a22f223f764207fee188b5da9cd66/1000x1000-000000-80-0-0.jpg",
     "dimensions": "36\" x 12\" (Three 12\" x 12\" panels)",
     "features": [
       "Museum-quality acrylic",
@@ -633,7 +633,7 @@ export const products: Product[] = [
     "price": 129,
     "category": "Classical",
     "type": "single",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/3cdb0a5be2b375485af5355f08b8e408/1000x1000-000000-80-0-0.jpg",
+    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/206fa93d1e4afc7cbd6629e03146ad8d/1000x1000-000000-80-0-0.jpg",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",
@@ -649,7 +649,7 @@ export const products: Product[] = [
     "price": 129,
     "category": "Classical",
     "type": "single",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/b31e35c294278b3451dba588322b9404/1000x1000-000000-80-0-0.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1?auto=format&fit=crop&q=80&w=1200&sig=41",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",
@@ -665,7 +665,7 @@ export const products: Product[] = [
     "price": 349,
     "category": "Classical",
     "type": "triptych",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/8e2c99a96a76b12add6b23291ddb6ff4/1000x1000-000000-80-0-0.jpg",
+    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/af2e8596ec6b3c9249db4488dfc4c1ce/1000x1000-000000-80-0-0.jpg",
     "dimensions": "36\" x 12\" (Three 12\" x 12\" panels)",
     "features": [
       "Museum-quality acrylic",
@@ -681,7 +681,7 @@ export const products: Product[] = [
     "price": 129,
     "category": "Classical",
     "type": "single",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/fdb3b64a9f86322b1de30e92039aaae3/1000x1000-000000-80-0-0.jpg",
+    "imageUrl": "https://images.unsplash.com/photo-1?auto=format&fit=crop&q=80&w=1200&sig=43",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",
@@ -697,7 +697,7 @@ export const products: Product[] = [
     "price": 129,
     "category": "Classical",
     "type": "single",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/a1f0aa73054a2de4bb0cf4a62cf0e4ed/1000x1000-000000-80-0-0.jpg",
+    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/0f01e7669c33b197b18111a5f2d33e94/1000x1000-000000-80-0-0.jpg",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",
@@ -713,7 +713,7 @@ export const products: Product[] = [
     "price": 129,
     "category": "Classical",
     "type": "single",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/e170dfa3ceebce5238c4773cf11db51d/1000x1000-000000-80-0-0.jpg",
+    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/25bca5de0dd57a3abb07e322a3fd297a/1000x1000-000000-80-0-0.jpg",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",
@@ -777,7 +777,7 @@ export const products: Product[] = [
     "price": 129,
     "category": "Top 40s",
     "type": "single",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/abf272cffad9fb2b1552421ac6fac9c2/1000x1000-000000-80-0-0.jpg",
+    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/315772aec36013c1c0653d9dee37cffd/1000x1000-000000-80-0-0.jpg",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",
@@ -873,7 +873,7 @@ export const products: Product[] = [
     "price": 129,
     "category": "Top 40s",
     "type": "single",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/52b8eed0b5526f871c384b6ff591813a/1000x1000-000000-80-0-0.jpg",
+    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/275e511bf1e85a8a6c170c2c9dc55a7a/1000x1000-000000-80-0-0.jpg",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",
@@ -1659,38 +1659,6 @@ export const products: Product[] = [
     "category": "Psychedelic/Original Art",
     "type": "single",
     "imageUrl": "https://images.unsplash.com/photo-1?auto=format&fit=crop&q=80&w=1200&sig=105",
-    "dimensions": "12\" x 12\"",
-    "features": [
-      "Museum-quality acrylic",
-      "French-pleat back",
-      "Floating effect"
-    ]
-  },
-  {
-    "id": "106",
-    "title": "Paid in Full (Single)",
-    "artist": "Eric B. & Rakim",
-    "description": "The definitive Golden Age hip-hop cover, immortalized in a single 12x12 acrylic panel.",
-    "price": 129,
-    "category": "Hip-Hop",
-    "type": "single",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/c5a0ba17814011f4ccce2efec2eb4d67/1000x1000-000000-80-0-0.jpg",
-    "dimensions": "12\" x 12\"",
-    "features": [
-      "Museum-quality acrylic",
-      "French-pleat back",
-      "Floating effect"
-    ]
-  },
-  {
-    "id": "107",
-    "title": "Illmatic (Single)",
-    "artist": "Nas",
-    "description": "Nas's debut masterpiece, immortalized in a single 12x12 acrylic panel.",
-    "price": 129,
-    "category": "Hip-Hop",
-    "type": "single",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/4c2dc31af4f87864afcdb6ab599c7960/1000x1000-000000-80-0-0.jpg",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",

@@ -1,6 +1,7 @@
 
 const fs = require('fs');
 const https = require('https');
+const path = require('path');
 
 const genres = {
   'Hip-Hop': [
@@ -8,17 +9,17 @@ const genres = {
     { title: 'Paid in Full', artist: 'Eric B. & Rakim' },
     { title: 'Illmatic', artist: 'Nas' },
     { title: 'Ready to Die', artist: 'The Notorious B.I.G.' },
-    { title: '36 Chambers', artist: 'Wu-Tang Clan' },
+    { title: 'Enter the Wu-Tang (36 Chambers)', artist: 'Wu-Tang Clan' },
     { title: 'The Low End Theory', artist: 'A Tribe Called Quest' },
     { title: 'Midnight Marauders', artist: 'A Tribe Called Quest' },
     { title: 'Reasonable Doubt', artist: 'Jay-Z' },
     { title: 'Life After Death', artist: 'The Notorious B.I.G.' },
-    { title: 'Aquemini', artist: 'Outkast' },
+    { title: 'Aquemini', artist: 'OutKast' },
     { title: 'The Miseducation of Lauryn Hill', artist: 'Lauryn Hill' },
     { title: '2001', artist: 'Dr. Dre' },
     { title: 'Get Rich or Die Tryin\'', artist: '50 Cent' },
     { title: 'Late Registration', artist: 'Kanye West' },
-    { title: 'Good Kid M.A.A.D City', artist: 'Kendrick Lamar' }
+    { title: 'good kid, m.A.A.d city', artist: 'Kendrick Lamar' }
   ],
   'Rock': [
     { title: 'Nevermind', artist: 'Nirvana' },
@@ -126,7 +127,7 @@ const genres = {
 
 function fetchDeezerCover(title, artist) {
   return new Promise((resolve) => {
-    const query = encodeURIComponent(`${title} ${artist}`);
+    const query = encodeURIComponent(`artist:"${artist}" album:"${title}"`);
     https.get(`https://api.deezer.com/search?q=${query}`, (res) => {
       let data = '';
       res.on('data', (chunk) => data += chunk);
@@ -148,8 +149,6 @@ function fetchDeezerCover(title, artist) {
 
 async function generate() {
   const products = [];
-  let idCounter = 1;
-
   const specialUrls = {
     'The Chronic': 'https://cdn-images.dzcdn.net/images/cover/36cffacf94fdcc49921affe8a865f6f1/1000x1000-000000-80-0-0.jpg',
     'Nevermind': 'https://cdn-images.dzcdn.net/images/cover/fb71ce45bc9d3f2cb53977cf18d43b0a/1000x1000-000000-80-0-0.jpg',
@@ -160,7 +159,10 @@ async function generate() {
     'Illmatic': 'https://cdn-images.dzcdn.net/images/cover/4c2dc31af4f87864afcdb6ab599c7960/1000x1000-000000-80-0-0.jpg'
   };
 
+  let globalIndex = 1;
+
   for (const [genre, items] of Object.entries(genres)) {
+    let genreIndex = 1;
     for (const item of items) {
       let imageUrl = specialUrls[item.title];
       
@@ -171,13 +173,13 @@ async function generate() {
       if (!imageUrl) {
         // Fallback or Unsplash for non-music
         const query = encodeURIComponent(`${item.title} ${genre}`);
-        imageUrl = `https://images.unsplash.com/photo-1?auto=format&fit=crop&q=80&w=1200&sig=${idCounter}`; // Mocking with sig
+        imageUrl = `https://images.unsplash.com/photo-1?auto=format&fit=crop&q=80&w=1200&sig=${globalIndex}`;
       }
 
-      const isTriptych = [2, 9, 12].includes(idCounter % 15); // Randomly make some triptychs
+      const isTriptych = [2, 9, 12].includes(genreIndex); // Consistent triptych slots per genre
 
       products.push({
-        id: String(idCounter++),
+        id: String(globalIndex++),
         title: item.title,
         artist: item.artist || undefined,
         description: item.description || `${item.title} by ${item.artist}, immortalized in museum-quality acrylic.`,
@@ -188,40 +190,17 @@ async function generate() {
         dimensions: isTriptych ? '36" x 12" (Three 12" x 12" panels)' : '12" x 12"',
         features: ['Museum-quality acrylic', 'French-pleat back', isTriptych ? 'Seamless alignment' : 'Floating effect']
       });
+      genreIndex++;
     }
   }
 
-  // Specific additions requested by lead
-  products.push({
-    id: String(idCounter++),
-    title: 'Paid in Full (Single)',
-    artist: 'Eric B. & Rakim',
-    description: 'The definitive Golden Age hip-hop cover, immortalized in a single 12x12 acrylic panel.',
-    price: 129,
-    category: 'Hip-Hop',
-    type: 'single',
-    imageUrl: specialUrls['Paid in Full'],
-    dimensions: '12" x 12"',
-    features: ['Museum-quality acrylic', 'French-pleat back', 'Floating effect']
-  });
+  const content = `import type { Product } from '../types';
 
-  products.push({
-    id: String(idCounter++),
-    title: 'Illmatic (Single)',
-    artist: 'Nas',
-    description: 'Nas\'s debut masterpiece, immortalized in a single 12x12 acrylic panel.',
-    price: 129,
-    category: 'Hip-Hop',
-    type: 'single',
-    imageUrl: specialUrls['Illmatic'],
-    dimensions: '12" x 12"',
-    features: ['Museum-quality acrylic', 'French-pleat back', 'Floating effect']
-  });
-
-  const content = `import type { Product } from '../types';\n\nexport const products: Product[] = ${JSON.stringify(products, null, 2)};\n`;
-  const path = require('path');
+export const products: Product[] = ${JSON.stringify(products, null, 2)};
+`;
+  
   fs.writeFileSync(path.join(__dirname, 'src/data/products.ts'), content);
-  console.log('Generated 105 products.');
+  console.log('Generated ' + products.length + ' products.');
 }
 
 generate();
