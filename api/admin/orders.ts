@@ -13,9 +13,10 @@ export default async function handler(req: any, res: any) {
   }
 
   try {
-    // Note: line_items cannot be expanded in list()
+    // Expand line_items to get product details
     const sessions = await stripe.checkout.sessions.list({
       limit: 50,
+      expand: ['data.line_items'],
     });
 
     const orders = sessions.data.map(session => ({
@@ -27,6 +28,11 @@ export default async function handler(req: any, res: any) {
       email: session.customer_details?.email,
       created: session.created,
       shipping: session.shipping_details?.address,
+      items: session.line_items?.data.map(item => ({
+        title: item.description,
+        quantity: item.quantity,
+        price: item.amount_total / 100,
+      })) || [],
     }));
 
     res.status(200).json({ orders });
