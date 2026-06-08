@@ -26,13 +26,17 @@ export default async function handler(req: any, res: any) {
 
       // Create Checkout Sessions from body params.
       const session = await stripe.checkout.sessions.create({
-        payment_method_types: ['card', 'cashapp'], // Explicitly include cashapp
+        payment_method_types: ['card', 'cashapp'],
         line_items,
         mode: 'payment',
         success_url: `${req.headers.origin}/success?session_id={CHECKOUT_SESSION_ID}`,
         cancel_url: `${req.headers.origin}/cart`,
         shipping_address_collection: {
           allowed_countries: ['US', 'CA', 'GB'],
+        },
+        metadata: {
+          source: 'Kulture Kapsule Web',
+          item_count: cart.length.toString(),
         },
       });
 
