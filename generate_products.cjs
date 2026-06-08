@@ -73,21 +73,21 @@ const genres = {
     { title: 'Like a Virgin', artist: 'Madonna' }
   ],
   'Movie Scenes': [
-    { title: 'Pulp Fiction Dance', description: 'The iconic Jack Rabbit Slims dance scene.' },
+    { title: 'Friday', description: 'The legendary "Bye Felicia" moment.' },
     { title: 'The Godfather', description: 'The classic puppet-string logo.' },
-    { title: 'Paid in Full', description: 'The legendary money stack scene.' },
-    { title: 'Fight Club', description: 'The final scene overlooking the skyline.' },
-    { title: 'Scarface', description: 'The "Say Hello to My Little Friend" moment.' },
-    { title: 'Blade Runner 2049', description: 'The atmospheric neon cityscape.' },
-    { title: 'The Matrix', description: 'The falling green code rain.' },
-    { title: 'Inception', description: 'The spinning top on the table.' },
+    { title: 'The Color Purple', description: 'A story of sisterhood and resilience.' },
+    { title: 'Grease', description: 'Summer nights and high school dreams.' },
+    { title: 'Madea\'s Family Reunion', description: 'Family, faith, and fun.' },
+    { title: 'Bad Boys', description: 'Ride together, die together.' },
+    { title: 'Training Day', description: 'King Kong ain\'t got nothing on me.' },
+    { title: 'The Devil Wears Prada', description: 'Fashion is a battlefield.' },
     { title: 'Star Wars', description: 'The twin sunset on Tatooine.' },
-    { title: 'Jurassic Park', description: 'The first T-Rex reveal in the rain.' },
-    { title: 'Eternal Sunshine', description: 'The couple lying on the frozen lake.' },
+    { title: 'Shottas', description: 'The raw street culture of Kingston.' },
+    { title: 'Pulp Fiction', description: 'The iconic dance at Jack Rabbit Slims.' },
     { title: 'Taxi Driver', description: 'Travis Bickle in the neon night.' },
-    { title: 'La La Land', description: 'The sunset dance overlooking LA.' },
-    { title: 'Moonlight', description: 'The iconic blue-tinted portrait.' },
-    { title: 'Parasite', description: 'The minimalist basement window view.' }
+    { title: 'Scarface', description: 'The world is yours.' },
+    { title: 'Fight Club', description: 'The first rule is: you do not talk about Fight Club.' },
+    { title: 'Paid in Full', description: 'The legendary money stack scene.' }
   ],
   'Quotes': [
     { title: 'Stay Hungry, Stay Foolish', artist: 'Steve Jobs' },
@@ -156,7 +156,15 @@ async function generate() {
     'Abbey Road': 'https://cdn-images.dzcdn.net/images/cover/aa94ab293730bb7845d2aa8c672b2c29/1000x1000-000000-80-0-0.jpg',
     'Thriller': 'https://cdn-images.dzcdn.net/images/cover/92a024220a9532489c75c9d994835697/1000x1000-000000-80-0-0.jpg',
     'Paid in Full': 'https://cdn-images.dzcdn.net/images/cover/c5a0ba17814011f4ccce2efec2eb4d67/1000x1000-000000-80-0-0.jpg',
-    'Illmatic': 'https://cdn-images.dzcdn.net/images/cover/4c2dc31af4f87864afcdb6ab599c7960/1000x1000-000000-80-0-0.jpg'
+    'Illmatic': 'https://cdn-images.dzcdn.net/images/cover/4c2dc31af4f87864afcdb6ab599c7960/1000x1000-000000-80-0-0.jpg',
+    'Friday': 'https://upload.wikimedia.org/wikipedia/en/2/27/Fridayposter1995.jpg',
+    'The Color Purple': 'https://upload.wikimedia.org/wikipedia/en/b/be/The_Color_Purple_poster.jpg',
+    'Grease': 'https://upload.wikimedia.org/wikipedia/en/e/e2/Grease_ver2.jpg',
+    'Madea\'s Family Reunion': 'https://upload.wikimedia.org/wikipedia/en/2/21/Madea%27s_Family_Reunion.jpg',
+    'Bad Boys': 'https://upload.wikimedia.org/wikipedia/en/a/a8/Bad_Boys.jpg',
+    'Training Day': 'https://upload.wikimedia.org/wikipedia/en/b/b3/Training_Day_Poster.jpg',
+    'The Devil Wears Prada': 'https://upload.wikimedia.org/wikipedia/en/e/e7/The_Devil_Wears_Prada_main_onesheet.jpg',
+    'Shottas': 'https://upload.wikimedia.org/wikipedia/en/c/cc/Shottas2002Film.jpg'
   };
 
   let globalIndex = 1;
