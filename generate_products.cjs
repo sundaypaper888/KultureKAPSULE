@@ -1,4 +1,3 @@
-
 const fs = require('fs');
 const https = require('https');
 const path = require('path');
@@ -73,21 +72,29 @@ const genres = {
     { title: 'Like a Virgin', artist: 'Madonna' }
   ],
   'Movie Scenes': [
-    { title: 'Friday', description: 'The legendary "Bye Felicia" moment.' },
+    { title: 'Pulp Fiction Dance', description: 'The iconic Jack Rabbit Slims dance scene.' },
     { title: 'The Godfather', description: 'The classic puppet-string logo.' },
+    { title: 'Paid in Full', description: 'The legendary money stack scene.' },
+    { title: 'Fight Club', description: 'The final scene overlooking the skyline.' },
+    { title: 'Scarface', description: 'The "Say Hello to My Little Friend" moment.' },
+    { title: 'Blade Runner 2049', description: 'The atmospheric neon cityscape.' },
+    { title: 'The Matrix', description: 'The falling green code rain.' },
+    { title: 'Inception', description: 'The spinning top on the table.' },
+    { title: 'Star Wars', description: 'The twin sunset on Tatooine.' },
+    { title: 'Jurassic Park', description: 'The first T-Rex reveal in the rain.' },
+    { title: 'Eternal Sunshine', description: 'The couple lying on the frozen lake.' },
+    { title: 'Taxi Driver', description: 'Travis Bickle in the neon night.' },
+    { title: 'La La Land', description: 'The sunset dance overlooking LA.' },
+    { title: 'Moonlight', description: 'The iconic blue-tinted portrait.' },
+    { title: 'Parasite', description: 'The minimalist basement window view.' },
+    { title: 'Friday', description: 'The legendary "Bye Felicia" moment.' },
     { title: 'The Color Purple', description: 'A story of sisterhood and resilience.' },
     { title: 'Grease', description: 'Summer nights and high school dreams.' },
     { title: 'Madea\'s Family Reunion', description: 'Family, faith, and fun.' },
     { title: 'Bad Boys', description: 'Ride together, die together.' },
     { title: 'Training Day', description: 'King Kong ain\'t got nothing on me.' },
     { title: 'The Devil Wears Prada', description: 'Fashion is a battlefield.' },
-    { title: 'Star Wars', description: 'The twin sunset on Tatooine.' },
-    { title: 'Shottas', description: 'The raw street culture of Kingston.' },
-    { title: 'Pulp Fiction', description: 'The iconic dance at Jack Rabbit Slims.' },
-    { title: 'Taxi Driver', description: 'Travis Bickle in the neon night.' },
-    { title: 'Scarface', description: 'The world is yours.' },
-    { title: 'Fight Club', description: 'The first rule is: you do not talk about Fight Club.' },
-    { title: 'Paid in Full', description: 'The legendary money stack scene.' }
+    { title: 'Shottas', description: 'The raw street culture of Kingston.' }
   ],
   'Quotes': [
     { title: 'Stay Hungry, Stay Foolish', artist: 'Steve Jobs' },
@@ -150,6 +157,7 @@ function fetchDeezerCover(title, artist) {
 async function generate() {
   const products = [];
   const specialUrls = {
+    // Music
     'The Chronic': 'https://cdn-images.dzcdn.net/images/cover/36cffacf94fdcc49921affe8a865f6f1/1000x1000-000000-80-0-0.jpg',
     'Nevermind': 'https://cdn-images.dzcdn.net/images/cover/fb71ce45bc9d3f2cb53977cf18d43b0a/1000x1000-000000-80-0-0.jpg',
     'Dark Side of the Moon': 'https://cdn-images.dzcdn.net/images/cover/e635a8510c1a74bc089b3566ebbb9cb8/1000x1000-000000-80-0-0.jpg',
@@ -157,6 +165,22 @@ async function generate() {
     'Thriller': 'https://cdn-images.dzcdn.net/images/cover/92a024220a9532489c75c9d994835697/1000x1000-000000-80-0-0.jpg',
     'Paid in Full': 'https://cdn-images.dzcdn.net/images/cover/c5a0ba17814011f4ccce2efec2eb4d67/1000x1000-000000-80-0-0.jpg',
     'Illmatic': 'https://cdn-images.dzcdn.net/images/cover/4c2dc31af4f87864afcdb6ab599c7960/1000x1000-000000-80-0-0.jpg',
+    
+    // Movie Scenes
+    'Pulp Fiction Dance': 'https://upload.wikimedia.org/wikipedia/en/2/29/Pulp_Fiction_%281994%29_poster.jpg',
+    'The Godfather': 'https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg',
+    'Fight Club': 'https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg',
+    'Scarface': 'https://upload.wikimedia.org/wikipedia/en/7/7f/Scarfaceposter.jpg',
+    'Blade Runner 2049': 'https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png',
+    'The Matrix': 'https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg',
+    'Inception': 'https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg',
+    'Star Wars': 'https://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg',
+    'Jurassic Park': 'https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg',
+    'Eternal Sunshine': 'https://upload.wikimedia.org/wikipedia/en/6/6b/Eternal_sunshine_sm.jpg',
+    'Taxi Driver': 'https://upload.wikimedia.org/wikipedia/en/3/3d/Taxi_Driver_%281976_film%29_poster.jpg',
+    'La La Land': 'https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29_poster.png',
+    'Moonlight': 'https://upload.wikimedia.org/wikipedia/en/8/84/Moonlight_%282016_film%29.png',
+    'Parasite': 'https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29_poster.jpg',
     'Friday': 'https://upload.wikimedia.org/wikipedia/en/2/27/Fridayposter1995.jpg',
     'The Color Purple': 'https://upload.wikimedia.org/wikipedia/en/b/be/The_Color_Purple_poster.jpg',
     'Grease': 'https://upload.wikimedia.org/wikipedia/en/e/e2/Grease_ver2.jpg',
@@ -164,7 +188,45 @@ async function generate() {
     'Bad Boys': 'https://upload.wikimedia.org/wikipedia/en/a/a8/Bad_Boys.jpg',
     'Training Day': 'https://upload.wikimedia.org/wikipedia/en/b/b3/Training_Day_Poster.jpg',
     'The Devil Wears Prada': 'https://upload.wikimedia.org/wikipedia/en/e/e7/The_Devil_Wears_Prada_main_onesheet.jpg',
-    'Shottas': 'https://upload.wikimedia.org/wikipedia/en/c/cc/Shottas2002Film.jpg'
+    'Shottas': 'https://upload.wikimedia.org/wikipedia/en/c/cc/Shottas2002Film.jpg',
+
+    // Classical
+    'Swan Lake': 'https://images.unsplash.com/photo-1507838155914-a4f5f94cf6dc?auto=format&fit=crop&q=80&w=1000',
+    'The Nutcracker': 'https://images.unsplash.com/photo-1465847793335-da3b44f50633?auto=format&fit=crop&q=80&w=1000',
+
+    // Quotes
+    'Stay Hungry, Stay Foolish': 'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=1000',
+    'To Be Or Not To Be': 'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=1000',
+    'I Have A Dream': 'https://images.unsplash.com/photo-1516383274235-5f42d6c6426d?auto=format&fit=crop&q=80&w=1000',
+    'Imagination is more important than knowledge': 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1000',
+    'The only thing we have to fear is fear itself': 'https://images.unsplash.com/photo-1504194104404-433180773017?auto=format&fit=crop&q=80&w=1000',
+    'That\'s one small step for man': 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&q=80&w=1000',
+    'Be the change you wish to see in the world': 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&q=80&w=1000',
+    'In the end, we will remember not the words of our enemies': 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=1000',
+    'Life is what happens when you\'re making other plans': 'https://images.unsplash.com/photo-1439405326854-014607f694d7?auto=format&fit=crop&q=80&w=1000',
+    'The journey of a thousand miles begins with one step': 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&q=80&w=1000',
+    'Float like a butterfly, sting like a bee': 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&q=80&w=1000',
+    'Well done is better than well said': 'https://images.unsplash.com/photo-1532619187609-e3a4c52e7ff4?auto=format&fit=crop&q=80&w=1000',
+    'Everything you can imagine is real': 'https://images.unsplash.com/photo-1520034475321-cbe63696469a?auto=format&fit=crop&q=80&w=1000',
+    'Keep calm and carry on': 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&q=80&w=1000',
+    'Knowledge is power': 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=1000',
+
+    // Psychedelic
+    'Amanita Muscaria': 'https://images.unsplash.com/photo-1504194104404-433180773017?auto=format&fit=crop&q=80&w=1000',
+    'Neon Nebula': 'https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=1000',
+    'Fractal Forest': 'https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?auto=format&fit=crop&q=80&w=1000',
+    'Electric Dreams': 'https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&q=80&w=1000',
+    'Celestial Garden': 'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=1000',
+    'Prism Pathway': 'https://images.unsplash.com/photo-1550684376-efcbd6e3f031?auto=format&fit=crop&q=80&w=1000',
+    'Liquid Light': 'https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&q=80&w=1000',
+    'Cosmic Mushroom': 'https://images.unsplash.com/photo-1504194104404-433180773017?auto=format&fit=crop&q=80&w=1000',
+    'Astral Plane': 'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=1000',
+    'Geometric Galaxy': 'https://images.unsplash.com/photo-1550684376-efcbd6e3f031?auto=format&fit=crop&q=80&w=1000',
+    'Melting Moments': 'https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=1000',
+    'Vortex Vision': 'https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&q=80&w=1000',
+    'Spirit Guide': 'https://images.unsplash.com/photo-1550684376-efcbd6e3f031?auto=format&fit=crop&q=80&w=1000',
+    'Technicolor Tundra': 'https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=1000',
+    'Dream Weaver': 'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=1000'
   };
 
   let globalIndex = 1;
