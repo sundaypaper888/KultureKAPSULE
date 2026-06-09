@@ -196,10 +196,10 @@ async function generate() {
 
     // Quotes
     'Stay Hungry, Stay Foolish': 'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=1000',
-    'To Be Or Not To Be': 'https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=1000',
+    'To Be Or Not To Be': 'https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&q=80&w=1000',
     'I Have A Dream': 'https://images.unsplash.com/photo-1516383274235-5f42d6c6426d?auto=format&fit=crop&q=80&w=1000',
     'Imagination is more important than knowledge': 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1000',
-    'The only thing we have to fear is fear itself': 'https://images.unsplash.com/photo-1504194104404-433180773017?auto=format&fit=crop&q=80&w=1000',
+    'The only thing we have to fear is fear itself': 'https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&q=80&w=1000',
     'That\'s one small step for man': 'https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&fit=crop&q=80&w=1000',
     'Be the change you wish to see in the world': 'https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&q=80&w=1000',
     'In the end, we will remember not the words of our enemies': 'https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&q=80&w=1000',
@@ -246,19 +246,33 @@ async function generate() {
         imageUrl = `https://images.unsplash.com/photo-1?auto=format&fit=crop&q=80&w=1200&sig=${globalIndex}`;
       }
 
-      const isTriptych = [2, 9, 12].includes(genreIndex); // Consistent triptych slots per genre
+      const isTriptych = [2, 9, 12].includes(genreIndex) && genre !== 'Movie Scenes'; // Consistent triptych slots per genre, except Movie Scenes
+      
+      let price = isTriptych ? 349 : 129;
+      let type = isTriptych ? 'triptych' : 'single';
+      let dimensions = isTriptych ? '36" x 12" (Three 12" x 12" panels)' : '12" x 12"';
+      let features = ['Museum-quality acrylic', 'French-pleat back', isTriptych ? 'Seamless alignment' : 'Floating effect'];
+      let description = item.description || `${item.title} by ${item.artist}, immortalized in museum-quality acrylic.`;
+
+      if (genre === 'Movie Scenes') {
+        price = 500;
+        type = 'single';
+        dimensions = '27" x 40"';
+        features.push('Full-size movie poster format');
+        description += ' Premium 27x40 vertical acrylic format.';
+      }
 
       products.push({
         id: String(globalIndex++),
         title: item.title,
         artist: item.artist || undefined,
-        description: item.description || `${item.title} by ${item.artist}, immortalized in museum-quality acrylic.`,
-        price: isTriptych ? 349 : 129,
+        description: description,
+        price: price,
         category: genre,
-        type: isTriptych ? 'triptych' : 'single',
+        type: type,
         imageUrl: imageUrl,
-        dimensions: isTriptych ? '36" x 12" (Three 12" x 12" panels)' : '12" x 12"',
-        features: ['Museum-quality acrylic', 'French-pleat back', isTriptych ? 'Seamless alignment' : 'Floating effect']
+        dimensions: dimensions,
+        features: features
       });
       genreIndex++;
     }

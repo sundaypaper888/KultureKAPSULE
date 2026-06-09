@@ -964,346 +964,369 @@ export const products: Product[] = [
   {
     "id": "61",
     "title": "Pulp Fiction Dance",
-    "description": "The iconic Jack Rabbit Slims dance scene.",
-    "price": 129,
+    "description": "The iconic Jack Rabbit Slims dance scene. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/29/Pulp_Fiction_%281994%29_poster.jpg",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "62",
     "title": "The Godfather",
-    "description": "The classic puppet-string logo.",
-    "price": 349,
+    "description": "The classic puppet-string logo. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
-    "type": "triptych",
+    "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
-    "dimensions": "36\" x 12\" (Three 12\" x 12\" panels)",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Seamless alignment"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "63",
     "title": "Paid in Full",
-    "description": "The legendary money stack scene.",
-    "price": 129,
+    "description": "The legendary money stack scene. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://cdn-images.dzcdn.net/images/cover/c5a0ba17814011f4ccce2efec2eb4d67/1000x1000-000000-80-0-0.jpg",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "64",
     "title": "Fight Club",
-    "description": "The final scene overlooking the skyline.",
-    "price": 129,
+    "description": "The final scene overlooking the skyline. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "65",
     "title": "Scarface",
-    "description": "The \"Say Hello to My Little Friend\" moment.",
-    "price": 129,
+    "description": "The \"Say Hello to My Little Friend\" moment. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/7/7f/Scarfaceposter.jpg",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "66",
     "title": "Blade Runner 2049",
-    "description": "The atmospheric neon cityscape.",
-    "price": 129,
+    "description": "The atmospheric neon cityscape. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "67",
     "title": "The Matrix",
-    "description": "The falling green code rain.",
-    "price": 129,
+    "description": "The falling green code rain. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "68",
     "title": "Inception",
-    "description": "The spinning top on the table.",
-    "price": 129,
+    "description": "The spinning top on the table. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "69",
     "title": "Star Wars",
-    "description": "The twin sunset on Tatooine.",
-    "price": 349,
+    "description": "The twin sunset on Tatooine. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
-    "type": "triptych",
+    "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg",
-    "dimensions": "36\" x 12\" (Three 12\" x 12\" panels)",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Seamless alignment"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "70",
     "title": "Jurassic Park",
-    "description": "The first T-Rex reveal in the rain.",
-    "price": 129,
+    "description": "The first T-Rex reveal in the rain. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "71",
     "title": "Eternal Sunshine",
-    "description": "The couple lying on the frozen lake.",
-    "price": 129,
+    "description": "The couple lying on the frozen lake. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/6/6b/Eternal_sunshine_sm.jpg",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "72",
     "title": "Taxi Driver",
-    "description": "Travis Bickle in the neon night.",
-    "price": 349,
+    "description": "Travis Bickle in the neon night. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
-    "type": "triptych",
+    "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/3/3d/Taxi_Driver_%281976_film%29_poster.jpg",
-    "dimensions": "36\" x 12\" (Three 12\" x 12\" panels)",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Seamless alignment"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "73",
     "title": "La La Land",
-    "description": "The sunset dance overlooking LA.",
-    "price": 129,
+    "description": "The sunset dance overlooking LA. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29_poster.png",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "74",
     "title": "Moonlight",
-    "description": "The iconic blue-tinted portrait.",
-    "price": 129,
+    "description": "The iconic blue-tinted portrait. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/8/84/Moonlight_%282016_film%29.png",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "75",
     "title": "Parasite",
-    "description": "The minimalist basement window view.",
-    "price": 129,
+    "description": "The minimalist basement window view. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29_poster.jpg",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "76",
     "title": "Friday",
-    "description": "The legendary \"Bye Felicia\" moment.",
-    "price": 129,
+    "description": "The legendary \"Bye Felicia\" moment. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/27/Fridayposter1995.jpg",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "77",
     "title": "The Color Purple",
-    "description": "A story of sisterhood and resilience.",
-    "price": 129,
+    "description": "A story of sisterhood and resilience. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/be/The_Color_Purple_poster.jpg",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "78",
     "title": "Grease",
-    "description": "Summer nights and high school dreams.",
-    "price": 129,
+    "description": "Summer nights and high school dreams. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e2/Grease_ver2.jpg",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "79",
     "title": "Madea's Family Reunion",
-    "description": "Family, faith, and fun.",
-    "price": 129,
+    "description": "Family, faith, and fun. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/21/Madea%27s_Family_Reunion.jpg",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "80",
     "title": "Bad Boys",
-    "description": "Ride together, die together.",
-    "price": 129,
+    "description": "Ride together, die together. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a8/Bad_Boys.jpg",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "81",
     "title": "Training Day",
-    "description": "King Kong ain't got nothing on me.",
-    "price": 129,
+    "description": "King Kong ain't got nothing on me. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b3/Training_Day_Poster.jpg",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "82",
     "title": "The Devil Wears Prada",
-    "description": "Fashion is a battlefield.",
-    "price": 129,
+    "description": "Fashion is a battlefield. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e7/The_Devil_Wears_Prada_main_onesheet.jpg",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
     "id": "83",
     "title": "Shottas",
-    "description": "The raw street culture of Kingston.",
-    "price": 129,
+    "description": "The raw street culture of Kingston. Premium 27x40 vertical acrylic format.",
+    "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/c/cc/Shottas2002Film.jpg",
-    "dimensions": "12\" x 12\"",
+    "dimensions": "27\" x 40\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect"
+      "Floating effect",
+      "Full-size movie poster format"
     ]
   },
   {
@@ -1330,7 +1353,7 @@ export const products: Product[] = [
     "price": 349,
     "category": "Quotes",
     "type": "triptych",
-    "imageUrl": "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=1000",
+    "imageUrl": "https://images.unsplash.com/photo-1506880018603-83d5b814b5a6?auto=format&fit=crop&q=80&w=1000",
     "dimensions": "36\" x 12\" (Three 12\" x 12\" panels)",
     "features": [
       "Museum-quality acrylic",
@@ -1378,7 +1401,7 @@ export const products: Product[] = [
     "price": 129,
     "category": "Quotes",
     "type": "single",
-    "imageUrl": "https://images.unsplash.com/photo-1504194104404-433180773017?auto=format&fit=crop&q=80&w=1000",
+    "imageUrl": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?auto=format&fit=crop&q=80&w=1000",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",
