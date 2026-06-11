@@ -633,7 +633,7 @@ export const products: Product[] = [
     "price": 129,
     "category": "Classical",
     "type": "single",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/206fa93d1e4afc7cbd6629e03146ad8d/1000x1000-000000-80-0-0.jpg",
+    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/35d4e04c4a2606a9f50018358109677c/1000x1000-000000-80-0-0.jpg",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",
@@ -665,7 +665,7 @@ export const products: Product[] = [
     "price": 349,
     "category": "Classical",
     "type": "triptych",
-    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/af2e8596ec6b3c9249db4488dfc4c1ce/1000x1000-000000-80-0-0.jpg",
+    "imageUrl": "https://cdn-images.dzcdn.net/images/cover/cc5feaf578021af935f1a7728168b4be/1000x1000-000000-80-0-0.jpg",
     "dimensions": "36\" x 12\" (Three 12\" x 12\" panels)",
     "features": [
       "Museum-quality acrylic",
@@ -973,8 +973,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -989,8 +989,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1005,8 +1005,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1021,8 +1021,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1037,8 +1037,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1053,8 +1053,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1069,8 +1069,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1085,8 +1085,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1101,8 +1101,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1117,8 +1117,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1133,8 +1133,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1149,8 +1149,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1165,8 +1165,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1181,8 +1181,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1197,8 +1197,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1213,8 +1213,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1229,8 +1229,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1245,8 +1245,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1261,8 +1261,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1277,8 +1277,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1293,8 +1293,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1309,8 +1309,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {
@@ -1325,8 +1325,8 @@ export const products: Product[] = [
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
-      "Floating effect",
-      "Full-size movie poster format"
+      "Full-size 27x40 movie poster format",
+      "Floating effect"
     ]
   },
   {

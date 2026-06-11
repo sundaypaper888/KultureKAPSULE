@@ -258,8 +258,8 @@ async function generate() {
         price = 500;
         type = 'single';
         dimensions = '27" x 40"';
-        features.push('Full-size movie poster format');
-        description += ' Premium 27x40 vertical acrylic format.';
+        features = ["Museum-quality acrylic", "French-pleat back", "Full-size 27x40 movie poster format", "Floating effect"];
+        description = (item.description || item.title) + " Premium 27x40 vertical acrylic format.";
       }
 
       products.push({
