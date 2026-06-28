@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ShoppingBag, ArrowRight, Trash2, Plus, Minus } from 'lucide-react';
+import { ShoppingBag, ArrowRight, Trash2, Plus, Minus, ShieldCheck, Truck, Lock } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 const Cart: React.FC = () => {
@@ -60,8 +60,13 @@ const Cart: React.FC = () => {
         <div className="lg:col-span-2 space-y-8">
           {cart.map((item) => (
             <div key={item.id} className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-8 pb-8 border-b border-muted-slate/10 group">
-              <div className="w-40 h-40 bg-muted-slate/5 rounded-xl overflow-hidden border border-muted-slate/10 shrink-0">
+              <div className="w-40 h-40 bg-muted-slate/5 rounded-xl overflow-hidden border border-muted-slate/10 shrink-0 relative">
                 <img src={item.imageUrl} alt={item.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                {item.price > 300 && (
+                  <div className="absolute top-2 left-2 bg-electric-cyan text-deep-space text-[8px] font-black uppercase tracking-widest px-2 py-1 rounded shadow-lg">
+                    Premium Tier
+                  </div>
+                )}
               </div>
               
               <div className="flex-grow text-center sm:text-left">
@@ -120,9 +125,12 @@ const Cart: React.FC = () => {
                 <span className="text-muted-slate">Subtotal</span>
                 <span className="text-gallery-white font-mono">${cartTotal}</span>
               </div>
-              <div className="flex justify-between text-sm uppercase tracking-widest">
+              <div className="flex justify-between text-sm uppercase tracking-widest items-center">
                 <span className="text-muted-slate">Shipping</span>
-                <span className="text-gallery-white font-mono text-[10px]">Calculated at Checkout</span>
+                <span className="text-electric-cyan font-bold text-[10px] flex items-center">
+                  <Truck size={12} className="mr-1" />
+                  FREE FOR LIMITED TIME
+                </span>
               </div>
               <div className="pt-4 border-t border-muted-slate/10 flex justify-between">
                 <span className="text-lg font-black uppercase tracking-tighter text-gallery-white">Total</span>
@@ -139,8 +147,18 @@ const Cart: React.FC = () => {
               {!loading && <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />}
             </button>
             
-            <p className="text-[10px] text-center text-muted-slate/60 uppercase tracking-widest leading-relaxed">
-              Taxes and shipping calculated during checkout process. 
+            <div className="flex flex-col space-y-4 mt-8 pt-8 border-t border-muted-slate/10">
+              <div className="flex items-center space-x-3 text-muted-slate/60">
+                <Lock size={14} className="text-electric-cyan" />
+                <span className="text-[10px] font-bold uppercase tracking-widest">Secure encrypted checkout</span>
+              </div>
+              <div className="flex items-center space-x-3 text-muted-slate/60">
+                <ShieldCheck size={14} className="text-electric-cyan" />
+                <span className="text-[10px] font-bold uppercase tracking-widest">Museum quality guarantee</span>
+              </div>
+            </div>
+
+            <p className="mt-8 text-[10px] text-center text-muted-slate/60 uppercase tracking-widest leading-relaxed">
               Secure gallery shipping guaranteed.
             </p>
           </div>
