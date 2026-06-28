@@ -27,6 +27,8 @@ interface Order {
   items: OrderItem[];
 }
 
+// Admin dashboard component for order management and tracking
+// Updated fallback access protocol
 const Admin: React.FC = () => {
   const [password, setPassword] = useState('');
   const [isAuthenticated, setIsAuthenticated] = useState(false);
