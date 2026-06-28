@@ -1,7 +1,7 @@
 
 import Stripe from 'stripe';
 
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY || '', {
+const stripe = new Stripe('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', {
   apiVersion: '2023-10-16' as any, // Use a stable version
 });
 
