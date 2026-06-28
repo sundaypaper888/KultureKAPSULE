@@ -85,12 +85,12 @@ const Home: React.FC = () => {
                 </p>
               </div>
               <a 
-                href="https://www.tiktok.com/@kulturekapsule" 
+                href="https://www.tiktok.com/@bankonsunday" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center space-x-3 bg-electric-cyan text-deep-space px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-gallery-white transition-all group"
               >
-                <span>Follow @kulturekapsule</span>
+                <span>Follow @bankonsunday</span>
                 <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
               </a>
             </div>
