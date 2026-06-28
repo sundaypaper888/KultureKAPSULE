@@ -49,3 +49,4 @@ export default async function handler(req: any, res: any) {
     res.status(405).end('Method Not Allowed');
   }
 }
+// Trigger Vercel redeploy to pick up env vars
