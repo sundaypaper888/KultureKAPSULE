@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import { ShoppingCart, Menu, X, Music2 } from 'lucide-react';
+import { ShoppingCart, Menu, X, Music2, Camera } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 const Layout: React.FC = () => {
@@ -30,6 +30,15 @@ const Layout: React.FC = () => {
               title="Follow on TikTok"
             >
               <Music2 size={20} className="text-gallery-white" />
+            </a>
+            <a 
+              href="https://www.instagram.com/kulturekapsule/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-2 hover:bg-muted-slate/10 rounded-full transition-colors"
+              title="Follow on Camera"
+            >
+              <Camera size={20} className="text-gallery-white" />
             </a>
             <Link to="/cart" className="p-2 hover:bg-muted-slate/10 rounded-full transition-colors relative">
               <ShoppingCart size={20} className="text-gallery-white" />
@@ -97,6 +106,17 @@ const Layout: React.FC = () => {
                   >
                     <Music2 size={14} />
                     <span>TikTok</span>
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://www.instagram.com/kulturekapsule/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="hover:text-electric-cyan transition-colors inline-flex items-center space-x-2"
+                  >
+                    <Camera size={14} />
+                    <span>Camera</span>
                   </a>
                 </li>
               </ul>
