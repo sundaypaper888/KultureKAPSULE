@@ -21,8 +21,8 @@ const About: React.FC = () => {
           <div className="relative group">
             <div className="absolute -inset-4 bg-electric-cyan/20 rounded-2xl blur-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
             <img 
-              src="https://images.unsplash.com/photo-1594623930572-300a3011d9ae?auto=format&fit=crop&q=80&w=1200" 
-              alt="Workshop" 
+              src="/images/tiktok/about-kapsule.png" 
+              alt="The Kulture Kapsule Process" 
               className="relative rounded-2xl shadow-premium grayscale hover:grayscale-0 transition-all duration-700"
             />
           </div>
