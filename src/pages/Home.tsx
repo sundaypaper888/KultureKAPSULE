@@ -70,6 +70,46 @@ const Home: React.FC = () => {
         </div>
       </section>
 
+      {/* TikTok Section */}
+      <section className="bg-electric-cyan/5 py-24 relative overflow-hidden">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="space-y-8">
+              <div>
+                <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter text-gallery-white mb-4">
+                  Witness the <br /> <span className="text-electric-cyan">Craft.</span>
+                </h2>
+                <p className="text-lg text-muted-slate max-w-xl leading-relaxed">
+                  Go behind the scenes and see how we preserve culture in museum-quality acrylic. 
+                  Follow us on TikTok for new drops, artist highlights, and a closer look at the Kulture Kapsule process.
+                </p>
+              </div>
+              <a 
+                href="https://www.tiktok.com/@kulturekapsule" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center space-x-3 bg-electric-cyan text-deep-space px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-gallery-white transition-all group"
+              >
+                <span>Follow @kulturekapsule</span>
+                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+              </a>
+            </div>
+            <div className="relative">
+              <div className="grid grid-cols-2 gap-4">
+                <div className="space-y-4 pt-12">
+                  <img src="/images/tiktok/cat-hiphop.png" alt="Hip-Hop Kapsule" className="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500" />
+                  <img src="/images/tiktok/cat-movies.png" alt="Movie Scene Kapsule" className="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500" />
+                </div>
+                <div className="space-y-4">
+                  <img src="/images/tiktok/promo-vinyl.png" alt="Vinyl Kapsule Promo" className="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500" />
+                  <img src="/images/tiktok/cat-art.png" alt="Original Art Kapsule" className="rounded-2xl shadow-2xl grayscale hover:grayscale-0 transition-all duration-500" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Value Prop Section */}
       <section className="bg-muted-slate/5 py-20 border-y border-muted-slate/10">
         <div className="container mx-auto px-4">
