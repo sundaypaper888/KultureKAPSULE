@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import { ShoppingCart, Menu, X } from 'lucide-react';
+import { ShoppingCart, Menu, X, Music2 } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 const Layout: React.FC = () => {
@@ -22,6 +22,15 @@ const Layout: React.FC = () => {
           </nav>
 
           <div className="flex items-center space-x-4">
+            <a 
+              href="https://www.tiktok.com/@kulturekapsule" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="p-2 hover:bg-muted-slate/10 rounded-full transition-colors"
+              title="Follow on TikTok"
+            >
+              <Music2 size={20} className="text-gallery-white" />
+            </a>
             <Link to="/cart" className="p-2 hover:bg-muted-slate/10 rounded-full transition-colors relative">
               <ShoppingCart size={20} className="text-gallery-white" />
               {cartCount > 0 && (
@@ -79,6 +88,17 @@ const Layout: React.FC = () => {
                 <li><Link to="/about" className="hover:text-electric-cyan transition-colors">About Us</Link></li>
                 <li><Link to="/contact" className="hover:text-electric-cyan transition-colors">Contact</Link></li>
                 <li><Link to="/custom" className="hover:text-electric-cyan transition-colors">Custom Orders</Link></li>
+                <li>
+                  <a 
+                    href="https://www.tiktok.com/@kulturekapsule" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="hover:text-electric-cyan transition-colors inline-flex items-center space-x-2"
+                  >
+                    <Music2 size={14} />
+                    <span>TikTok</span>
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
