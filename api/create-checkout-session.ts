@@ -50,3 +50,4 @@ export default async function handler(req: any, res: any) {
   }
 }
 // Trigger Vercel redeploy to pick up env vars
+// Final deploy - env vars ready
