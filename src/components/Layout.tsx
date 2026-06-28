@@ -23,7 +23,7 @@ const Layout: React.FC = () => {
 
           <div className="flex items-center space-x-4">
             <a 
-              href="https://www.tiktok.com/@bankonsunday" 
+              href="https://www.tiktok.com/@KULTUREKAPSULE" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 hover:bg-muted-slate/10 rounded-full transition-colors"
@@ -90,7 +90,7 @@ const Layout: React.FC = () => {
                 <li><Link to="/custom" className="hover:text-electric-cyan transition-colors">Custom Orders</Link></li>
                 <li>
                   <a 
-                    href="https://www.tiktok.com/@bankonsunday" 
+                    href="https://www.tiktok.com/@KULTUREKAPSULE" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="hover:text-electric-cyan transition-colors inline-flex items-center space-x-2"
