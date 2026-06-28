@@ -81,18 +81,29 @@ const Home: React.FC = () => {
                 </h2>
                 <p className="text-lg text-muted-slate max-w-xl leading-relaxed">
                   Go behind the scenes and see how we preserve culture in museum-quality acrylic. 
-                  Follow us on TikTok for new drops, artist highlights, and a closer look at the Kulture Kapsule process.
+                  Follow us on TikTok and Instagram for new drops, artist highlights, and a closer look at the Kulture Kapsule process.
                 </p>
               </div>
-              <a 
-                href="https://www.tiktok.com/@KULTUREKAPSULE" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center space-x-3 bg-electric-cyan text-deep-space px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-gallery-white transition-all group"
-              >
-                <span>Follow @KULTUREKAPSULE</span>
-                <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
-              </a>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a 
+                  href="https://www.tiktok.com/@KULTUREKAPSULE" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center space-x-3 bg-electric-cyan text-deep-space px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-gallery-white transition-all group"
+                >
+                  <span>Follow @KULTUREKAPSULE</span>
+                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                </a>
+                <a 
+                  href="https://www.instagram.com/kulturekapsule/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center space-x-3 bg-gallery-white text-deep-space px-8 py-4 rounded-full font-bold uppercase tracking-widest hover:bg-electric-cyan transition-all group"
+                >
+                  <span>Follow on Instagram</span>
+                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                </a>
+              </div>
             </div>
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">

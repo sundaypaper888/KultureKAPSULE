@@ -36,7 +36,7 @@ const Layout: React.FC = () => {
               target="_blank" 
               rel="noopener noreferrer"
               className="p-2 hover:bg-muted-slate/10 rounded-full transition-colors"
-              title="Follow on Camera"
+              title="Follow on Instagram"
             >
               <Camera size={20} className="text-gallery-white" />
             </a>
@@ -116,7 +116,7 @@ const Layout: React.FC = () => {
                     className="hover:text-electric-cyan transition-colors inline-flex items-center space-x-2"
                   >
                     <Camera size={14} />
-                    <span>Camera</span>
+                    <span>Instagram</span>
                   </a>
                 </li>
               </ul>
