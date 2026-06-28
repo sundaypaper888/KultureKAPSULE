@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Outlet } from 'react-router-dom';
-import { ShoppingCart, Menu, X, Music2, Camera } from 'lucide-react';
+import { ShoppingCart, Menu, X, Music2, Instagram } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 const Layout: React.FC = () => {
@@ -38,7 +38,7 @@ const Layout: React.FC = () => {
               className="p-2 hover:bg-muted-slate/10 rounded-full transition-colors"
               title="Follow on Instagram"
             >
-              <Camera size={20} className="text-gallery-white" />
+              <Instagram size={20} className="text-gallery-white" />
             </a>
             <Link to="/cart" className="p-2 hover:bg-muted-slate/10 rounded-full transition-colors relative">
               <ShoppingCart size={20} className="text-gallery-white" />
@@ -115,7 +115,7 @@ const Layout: React.FC = () => {
                     rel="noopener noreferrer" 
                     className="hover:text-electric-cyan transition-colors inline-flex items-center space-x-2"
                   >
-                    <Camera size={14} />
+                    <Instagram size={14} />
                     <span>Instagram</span>
                   </a>
                 </li>
