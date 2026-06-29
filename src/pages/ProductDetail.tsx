@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { products } from '../data/products';
-import { ChevronLeft, ShoppingBag, Truck, ShieldCheck, Zap, Check, Mail, Link as LinkIcon } from 'lucide-react';
+import { ChevronLeft, ShoppingBag, Truck, ShieldCheck, Zap, Check, Mail, Link as LinkIcon, Camera, Music } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 
 const ProductDetail: React.FC = () => {
@@ -11,6 +11,27 @@ const ProductDetail: React.FC = () => {
   const [isAdded, setIsAdded] = useState(false);
   
   const product = products.find(p => p.id === id);
+
+  const mockups = [
+    { 
+      url: 'https://images.printify.com/mockup/696466519cb911449507b6a7/78322/34909/historic-crowd-photo-acrylic-print-french-cleat-wall-art.jpg?camera_label=front',
+      label: 'Front View'
+    },
+    { 
+      url: 'https://images.printify.com/mockup/696466519cb911449507b6a7/78322/35233/historic-crowd-photo-acrylic-print-french-cleat-wall-art.jpg?camera_label=back',
+      label: 'Back View (French Cleat)'
+    },
+    { 
+      url: 'https://images.printify.com/mockup/696466519cb911449507b6a7/78322/55928/historic-crowd-photo-acrylic-print-french-cleat-wall-art.jpg?camera_label=close-up',
+      label: 'Close-up Detail'
+    },
+    { 
+      url: 'https://images.printify.com/mockup/696466519cb911449507b6a7/78322/55201/historic-crowd-photo-acrylic-print-french-cleat-wall-art.jpg?camera_label=context-1',
+      label: 'Lifestyle Shot'
+    }
+  ];
+
+  const [activeImage, setActiveImage] = useState(product?.imageUrl || '');
 
   if (!product) {
     return (
@@ -42,6 +63,15 @@ const ProductDetail: React.FC = () => {
 
   const shareOnReddit = () => {
     window.open(`https://reddit.com/submit?url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(shareText)}`, '_blank');
+  };
+
+  const shareOnTikTok = () => {
+    window.open(`https://www.tiktok.com/share?url=${encodeURIComponent(shareUrl)}`, '_blank');
+  };
+
+  const shareOnInstagram = () => {
+    // Web sharing for Instagram is limited, but we'll try the common share URL
+    window.open(`https://instagram.com/share?url=${encodeURIComponent(shareUrl)}`, '_blank');
   };
 
   const copyToClipboard = () => {
@@ -90,9 +120,9 @@ const ProductDetail: React.FC = () => {
         <div className="space-y-6">
           <div className="aspect-square bg-muted-slate/5 rounded-2xl overflow-hidden border border-muted-slate/10 shadow-premium relative group">
             <img 
-              src={product.imageUrl} 
+              src={activeImage} 
               alt={product.title} 
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
             />
             {isLimited && (
               <div className="absolute top-6 right-6 bg-electric-cyan text-deep-space px-4 py-2 rounded-full shadow-lg">
@@ -105,14 +135,25 @@ const ProductDetail: React.FC = () => {
               </div>
             )}
           </div>
-          <div className="grid grid-cols-4 gap-4">
-            <div className="aspect-square bg-muted-slate/5 rounded-lg overflow-hidden border-2 border-electric-cyan cursor-pointer">
-              <img src={product.imageUrl} alt="Thumbnail 1" className="w-full h-full object-cover" />
+          
+          <div className="grid grid-cols-5 gap-3">
+            <div 
+              className={`aspect-square rounded-lg overflow-hidden border-2 cursor-pointer transition-all ${
+                activeImage === product.imageUrl ? 'border-electric-cyan scale-105 shadow-lg shadow-electric-cyan/20' : 'border-transparent opacity-60 hover:opacity-100'
+              }`}
+              onClick={() => setActiveImage(product.imageUrl)}
+            >
+              <img src={product.imageUrl} alt="Main Artwork" className="w-full h-full object-cover" title="Original Artwork" />
             </div>
-            {/* Placeholders for more images */}
-            {[1, 2, 3].map(i => (
-              <div key={i} className="aspect-square bg-muted-slate/5 rounded-lg overflow-hidden border border-muted-slate/10 opacity-30 cursor-pointer hover:opacity-100 transition-opacity">
-                <img src={product.imageUrl} alt={`Thumbnail ${i+1}`} className="w-full h-full object-cover grayscale" />
+            {mockups.map((mockup, i) => (
+              <div 
+                key={i} 
+                className={`aspect-square rounded-lg overflow-hidden border-2 cursor-pointer transition-all ${
+                  activeImage === mockup.url ? 'border-electric-cyan scale-105 shadow-lg shadow-electric-cyan/20' : 'border-transparent opacity-60 hover:opacity-100'
+                }`}
+                onClick={() => setActiveImage(mockup.url)}
+              >
+                <img src={mockup.url} alt={mockup.label} className="w-full h-full object-cover" title={mockup.label} />
               </div>
             ))}
           </div>
@@ -130,6 +171,12 @@ const ProductDetail: React.FC = () => {
                 <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                 </svg>
+              </button>
+              <button onClick={shareOnTikTok} className="text-muted-slate hover:text-electric-cyan transition-colors" title="Share on TikTok">
+                <Music size={16} />
+              </button>
+              <button onClick={shareOnInstagram} className="text-muted-slate hover:text-electric-cyan transition-colors" title="Share on Instagram">
+                <Camera size={16} />
               </button>
               <button onClick={shareOnReddit} className="text-muted-slate hover:text-electric-cyan transition-colors" title="Share on Reddit">
                 <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current">
