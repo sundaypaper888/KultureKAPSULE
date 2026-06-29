@@ -12,27 +12,6 @@ const ProductDetail: React.FC = () => {
   
   const product = products.find(p => p.id === id);
 
-  const mockups = [
-    { 
-      url: 'https://images.printify.com/mockup/696466519cb911449507b6a7/78322/34909/historic-crowd-photo-acrylic-print-french-cleat-wall-art.jpg?camera_label=front',
-      label: 'Front View'
-    },
-    { 
-      url: 'https://images.printify.com/mockup/696466519cb911449507b6a7/78322/35233/historic-crowd-photo-acrylic-print-french-cleat-wall-art.jpg?camera_label=back',
-      label: 'Back View (French Cleat)'
-    },
-    { 
-      url: 'https://images.printify.com/mockup/696466519cb911449507b6a7/78322/55928/historic-crowd-photo-acrylic-print-french-cleat-wall-art.jpg?camera_label=close-up',
-      label: 'Close-up Detail'
-    },
-    { 
-      url: 'https://images.printify.com/mockup/696466519cb911449507b6a7/78322/55201/historic-crowd-photo-acrylic-print-french-cleat-wall-art.jpg?camera_label=context-1',
-      label: 'Lifestyle Shot'
-    }
-  ];
-
-  const [activeImage, setActiveImage] = useState(product?.imageUrl || '');
-
   if (!product) {
     return (
       <div className="container mx-auto px-4 py-20 text-center">
@@ -120,7 +99,7 @@ const ProductDetail: React.FC = () => {
         <div className="space-y-6">
           <div className="aspect-square bg-muted-slate/5 rounded-2xl overflow-hidden border border-muted-slate/10 shadow-premium relative group">
             <img 
-              src={activeImage} 
+              src={product.imageUrl} 
               alt={product.title} 
               className="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
             />
@@ -134,28 +113,6 @@ const ProductDetail: React.FC = () => {
                 <span className="text-electric-cyan text-[10px] font-bold uppercase tracking-[0.2em]">Only {stockCount} Remaining</span>
               </div>
             )}
-          </div>
-          
-          <div className="grid grid-cols-5 gap-3">
-            <div 
-              className={`aspect-square rounded-lg overflow-hidden border-2 cursor-pointer transition-all ${
-                activeImage === product.imageUrl ? 'border-electric-cyan scale-105 shadow-lg shadow-electric-cyan/20' : 'border-transparent opacity-60 hover:opacity-100'
-              }`}
-              onClick={() => setActiveImage(product.imageUrl)}
-            >
-              <img src={product.imageUrl} alt="Main Artwork" className="w-full h-full object-cover" title="Original Artwork" />
-            </div>
-            {mockups.map((mockup, i) => (
-              <div 
-                key={i} 
-                className={`aspect-square rounded-lg overflow-hidden border-2 cursor-pointer transition-all ${
-                  activeImage === mockup.url ? 'border-electric-cyan scale-105 shadow-lg shadow-electric-cyan/20' : 'border-transparent opacity-60 hover:opacity-100'
-                }`}
-                onClick={() => setActiveImage(mockup.url)}
-              >
-                <img src={mockup.url} alt={mockup.label} className="w-full h-full object-cover" title={mockup.label} />
-              </div>
-            ))}
           </div>
           
           {/* Social Share under image */}
