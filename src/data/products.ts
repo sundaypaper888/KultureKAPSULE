@@ -964,12 +964,12 @@ export const products: Product[] = [
   {
     "id": "61",
     "title": "Pulp Fiction Dance",
-    "description": "Released in 1994, Pulp Fiction Dance grossed over $214M at the global box office. Directed by Quentin Tarantino and starring John Travolta, Uma Thurman and Samuel L. Jackson, it won 1 Academy Awards and holds a 92% rating on Rotten Tomatoes. The Jack Rabbit Slims dance scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 1994, Pulp Fiction Dance grossed over $214M at the global box office. Directed by Quentin Tarantino and starring John Travolta, Uma Thurman and Samuel L. Jackson, it won 1 Academy Awards and holds a 92% rating on Rotten Tomatoes. The Jack Rabbit Slims dance scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/29/Pulp_Fiction_%281994%29_poster.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -980,12 +980,12 @@ export const products: Product[] = [
   {
     "id": "62",
     "title": "The Godfather",
-    "description": "Released in 1972, The Godfather grossed over $250M at the global box office. Directed by Francis Ford Coppola and starring Marlon Brando and Al Pacino, it won 3 Academy Awards and holds a 97% rating on Rotten Tomatoes. The opening wedding scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 1972, The Godfather grossed over $250M at the global box office. Directed by Francis Ford Coppola and starring Marlon Brando and Al Pacino, it won 3 Academy Awards and holds a 97% rating on Rotten Tomatoes. The opening wedding scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/1/1c/Godfather_ver1.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -996,12 +996,12 @@ export const products: Product[] = [
   {
     "id": "63",
     "title": "Paid in Full",
-    "description": "Released in 2002, Paid in Full grossed over $3M at the global box office. Directed by Charles Stone III and starring Wood Harris and Mekhi Phifer, it won 0 Academy Awards and holds a 53% rating on Rotten Tomatoes. The money stack scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 2002, Paid in Full grossed over $3M at the global box office. Directed by Charles Stone III and starring Wood Harris and Mekhi Phifer, it won 0 Academy Awards and holds a 53% rating on Rotten Tomatoes. The money stack scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://cdn-images.dzcdn.net/images/cover/c5a0ba17814011f4ccce2efec2eb4d67/1000x1000-000000-80-0-0.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1012,12 +1012,12 @@ export const products: Product[] = [
   {
     "id": "64",
     "title": "Fight Club",
-    "description": "Released in 1999, Fight Club grossed over $101M at the global box office. Directed by David Fincher and starring Brad Pitt and Edward Norton, it won 0 Academy Awards and holds a 79% rating on Rotten Tomatoes. The skyline ending scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 1999, Fight Club grossed over $101M at the global box office. Directed by David Fincher and starring Brad Pitt and Edward Norton, it won 0 Academy Awards and holds a 79% rating on Rotten Tomatoes. The skyline ending scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1028,12 +1028,12 @@ export const products: Product[] = [
   {
     "id": "65",
     "title": "Scarface",
-    "description": "Released in 1983, Scarface grossed over $66M at the global box office. Directed by Brian De Palma and starring Al Pacino, it won 0 Academy Awards and holds a 79% rating on Rotten Tomatoes. The \"Say Hello to My Little Friend\" scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 1983, Scarface grossed over $66M at the global box office. Directed by Brian De Palma and starring Al Pacino, it won 0 Academy Awards and holds a 79% rating on Rotten Tomatoes. The \"Say Hello to My Little Friend\" scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/7/7f/Scarfaceposter.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1044,12 +1044,12 @@ export const products: Product[] = [
   {
     "id": "66",
     "title": "Blade Runner 2049",
-    "description": "Released in 2017, Blade Runner 2049 grossed over $259M at the global box office. Directed by Denis Villeneuve and starring Ryan Gosling and Harrison Ford, it won 2 Academy Awards and holds a 88% rating on Rotten Tomatoes. The neon cityscape scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 2017, Blade Runner 2049 grossed over $259M at the global box office. Directed by Denis Villeneuve and starring Ryan Gosling and Harrison Ford, it won 2 Academy Awards and holds a 88% rating on Rotten Tomatoes. The neon cityscape scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/9/9b/Blade_Runner_2049_poster.png",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1060,12 +1060,12 @@ export const products: Product[] = [
   {
     "id": "67",
     "title": "The Matrix",
-    "description": "Released in 1999, The Matrix grossed over $467M at the global box office. Directed by The Wachowskis and starring Keanu Reeves, it won 4 Academy Awards and holds a 83% rating on Rotten Tomatoes. The code rain scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 1999, The Matrix grossed over $467M at the global box office. Directed by The Wachowskis and starring Keanu Reeves, it won 4 Academy Awards and holds a 83% rating on Rotten Tomatoes. The code rain scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1076,12 +1076,12 @@ export const products: Product[] = [
   {
     "id": "68",
     "title": "Inception",
-    "description": "Released in 2010, Inception grossed over $836M at the global box office. Directed by Christopher Nolan and starring Leonardo DiCaprio, it won 4 Academy Awards and holds a 87% rating on Rotten Tomatoes. The spinning top scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 2010, Inception grossed over $836M at the global box office. Directed by Christopher Nolan and starring Leonardo DiCaprio, it won 4 Academy Awards and holds a 87% rating on Rotten Tomatoes. The spinning top scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1092,12 +1092,12 @@ export const products: Product[] = [
   {
     "id": "69",
     "title": "Star Wars",
-    "description": "Released in 1977, Star Wars grossed over $775M at the global box office. Directed by George Lucas and starring Mark Hamill and Harrison Ford, it won 6 Academy Awards and holds a 93% rating on Rotten Tomatoes. The twin sunset scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 1977, Star Wars grossed over $775M at the global box office. Directed by George Lucas and starring Mark Hamill and Harrison Ford, it won 6 Academy Awards and holds a 93% rating on Rotten Tomatoes. The twin sunset scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/8/87/StarWarsMoviePoster1977.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1108,12 +1108,12 @@ export const products: Product[] = [
   {
     "id": "70",
     "title": "Jurassic Park",
-    "description": "Released in 1993, Jurassic Park grossed over $1033M at the global box office. Directed by Steven Spielberg and starring Sam Neill and Laura Dern, it won 3 Academy Awards and holds a 91% rating on Rotten Tomatoes. The T-Rex reveal scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 1993, Jurassic Park grossed over $1033M at the global box office. Directed by Steven Spielberg and starring Sam Neill and Laura Dern, it won 3 Academy Awards and holds a 91% rating on Rotten Tomatoes. The T-Rex reveal scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1124,12 +1124,12 @@ export const products: Product[] = [
   {
     "id": "71",
     "title": "Eternal Sunshine",
-    "description": "Released in 2004, Eternal Sunshine grossed over $74M at the global box office. Directed by Michel Gondry and starring Jim Carrey and Kate Winslet, it won 1 Academy Awards and holds a 92% rating on Rotten Tomatoes. The frozen lake scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 2004, Eternal Sunshine grossed over $74M at the global box office. Directed by Michel Gondry and starring Jim Carrey and Kate Winslet, it won 1 Academy Awards and holds a 92% rating on Rotten Tomatoes. The frozen lake scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/6/6b/Eternal_sunshine_sm.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1140,12 +1140,12 @@ export const products: Product[] = [
   {
     "id": "72",
     "title": "Taxi Driver",
-    "description": "Released in 1976, Taxi Driver grossed over $28M at the global box office. Directed by Martin Scorsese and starring Robert De Niro, it won 0 Academy Awards and holds a 89% rating on Rotten Tomatoes. The neon night scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 1976, Taxi Driver grossed over $28M at the global box office. Directed by Martin Scorsese and starring Robert De Niro, it won 0 Academy Awards and holds a 89% rating on Rotten Tomatoes. The neon night scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/3/3d/Taxi_Driver_%281976_film%29_poster.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1156,12 +1156,12 @@ export const products: Product[] = [
   {
     "id": "73",
     "title": "La La Land",
-    "description": "Released in 2016, La La Land grossed over $448M at the global box office. Directed by Damien Chazelle and starring Ryan Gosling and Emma Stone, it won 6 Academy Awards and holds a 91% rating on Rotten Tomatoes. The sunset dance scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 2016, La La Land grossed over $448M at the global box office. Directed by Damien Chazelle and starring Ryan Gosling and Emma Stone, it won 6 Academy Awards and holds a 91% rating on Rotten Tomatoes. The sunset dance scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/ab/La_La_Land_%28film%29_poster.png",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1172,12 +1172,12 @@ export const products: Product[] = [
   {
     "id": "74",
     "title": "Moonlight",
-    "description": "Released in 2016, Moonlight grossed over $65M at the global box office. Directed by Barry Jenkins and starring Trevante Rhodes, it won 3 Academy Awards and holds a 98% rating on Rotten Tomatoes. The blue-tinted portrait scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 2016, Moonlight grossed over $65M at the global box office. Directed by Barry Jenkins and starring Trevante Rhodes, it won 3 Academy Awards and holds a 98% rating on Rotten Tomatoes. The blue-tinted portrait scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/8/84/Moonlight_%282016_film%29.png",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1188,12 +1188,12 @@ export const products: Product[] = [
   {
     "id": "75",
     "title": "Parasite",
-    "description": "Released in 2019, Parasite grossed over $263M at the global box office. Directed by Bong Joon-ho and starring Song Kang-ho, it won 4 Academy Awards and holds a 99% rating on Rotten Tomatoes. The basement window scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 2019, Parasite grossed over $263M at the global box office. Directed by Bong Joon-ho and starring Song Kang-ho, it won 4 Academy Awards and holds a 99% rating on Rotten Tomatoes. The basement window scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/5/53/Parasite_%282019_film%29_poster.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1204,12 +1204,12 @@ export const products: Product[] = [
   {
     "id": "76",
     "title": "Friday",
-    "description": "Released in 1995, Friday grossed over $28M at the global box office. Directed by F. Gary Gray and starring Ice Cube and Chris Tucker, it won 0 Academy Awards and holds a 78% rating on Rotten Tomatoes. The \"Bye Felicia\" scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 1995, Friday grossed over $28M at the global box office. Directed by F. Gary Gray and starring Ice Cube and Chris Tucker, it won 0 Academy Awards and holds a 78% rating on Rotten Tomatoes. The \"Bye Felicia\" scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/27/Fridayposter1995.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1220,12 +1220,12 @@ export const products: Product[] = [
   {
     "id": "77",
     "title": "The Color Purple",
-    "description": "Released in 1985, The Color Purple grossed over $142M at the global box office. Directed by Steven Spielberg and starring Whoopi Goldberg, it won 0 Academy Awards and holds a 73% rating on Rotten Tomatoes. The sisterhood scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 1985, The Color Purple grossed over $142M at the global box office. Directed by Steven Spielberg and starring Whoopi Goldberg, it won 0 Academy Awards and holds a 73% rating on Rotten Tomatoes. The sisterhood scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/be/The_Color_Purple_poster.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1236,12 +1236,12 @@ export const products: Product[] = [
   {
     "id": "78",
     "title": "Grease",
-    "description": "Released in 1978, Grease grossed over $396M at the global box office. Directed by Randal Kleiser and starring John Travolta and Olivia Newton-John, it won 0 Academy Awards and holds a 75% rating on Rotten Tomatoes. The summer nights scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 1978, Grease grossed over $396M at the global box office. Directed by Randal Kleiser and starring John Travolta and Olivia Newton-John, it won 0 Academy Awards and holds a 75% rating on Rotten Tomatoes. The summer nights scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e2/Grease_ver2.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1252,12 +1252,12 @@ export const products: Product[] = [
   {
     "id": "79",
     "title": "Madea's Family Reunion",
-    "description": "Released in 2006, Madea's Family Reunion grossed over $63M at the global box office. Directed by Tyler Perry and starring Tyler Perry, it won 0 Academy Awards and holds a 26% rating on Rotten Tomatoes. The family reunion scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 2006, Madea's Family Reunion grossed over $63M at the global box office. Directed by Tyler Perry and starring Tyler Perry, it won 0 Academy Awards and holds a 26% rating on Rotten Tomatoes. The family reunion scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/2/21/Madea%27s_Family_Reunion.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1268,12 +1268,12 @@ export const products: Product[] = [
   {
     "id": "80",
     "title": "Bad Boys",
-    "description": "Released in 1995, Bad Boys grossed over $141M at the global box office. Directed by Michael Bay and starring Will Smith and Martin Lawrence, it won 0 Academy Awards and holds a 42% rating on Rotten Tomatoes. The ride together scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 1995, Bad Boys grossed over $141M at the global box office. Directed by Michael Bay and starring Will Smith and Martin Lawrence, it won 0 Academy Awards and holds a 42% rating on Rotten Tomatoes. The ride together scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/a/a8/Bad_Boys.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1284,12 +1284,12 @@ export const products: Product[] = [
   {
     "id": "81",
     "title": "Training Day",
-    "description": "Released in 2001, Training Day grossed over $104M at the global box office. Directed by Antoine Fuqua and starring Denzel Washington and Ethan Hawke, it won 1 Academy Awards and holds a 73% rating on Rotten Tomatoes. The King Kong scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 2001, Training Day grossed over $104M at the global box office. Directed by Antoine Fuqua and starring Denzel Washington and Ethan Hawke, it won 1 Academy Awards and holds a 73% rating on Rotten Tomatoes. The King Kong scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/b/b3/Training_Day_Poster.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1300,12 +1300,12 @@ export const products: Product[] = [
   {
     "id": "82",
     "title": "The Devil Wears Prada",
-    "description": "Released in 2006, The Devil Wears Prada grossed over $326M at the global box office. Directed by David Frankel and starring Meryl Streep and Anne Hathaway, it won 0 Academy Awards and holds a 75% rating on Rotten Tomatoes. The fashion battlefield scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 2006, The Devil Wears Prada grossed over $326M at the global box office. Directed by David Frankel and starring Meryl Streep and Anne Hathaway, it won 0 Academy Awards and holds a 75% rating on Rotten Tomatoes. The fashion battlefield scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/e/e7/The_Devil_Wears_Prada_main_onesheet.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1316,12 +1316,12 @@ export const products: Product[] = [
   {
     "id": "83",
     "title": "Shottas",
-    "description": "Released in 2002, Shottas grossed over $0.9M at the global box office. Directed by Cess Silvera and starring Ky-Mani Marley and Spragga Benz, it won 0 Academy Awards and holds a 0% rating on Rotten Tomatoes. The Kingston street scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.",
+    "description": "Released in 2002, Shottas grossed over $0.9M at the global box office. Directed by Cess Silvera and starring Ky-Mani Marley and Spragga Benz, it won 0 Academy Awards and holds a 0% rating on Rotten Tomatoes. The Kingston street scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.",
     "price": 500,
     "category": "Movie Scenes",
     "type": "single",
     "imageUrl": "https://upload.wikimedia.org/wikipedia/en/c/cc/Shottas2002Film.jpg",
-    "dimensions": "27\" x 40\"",
+    "dimensions": "24\" x 36\"",
     "features": [
       "Museum-quality acrylic",
       "French-pleat back",
@@ -1573,11 +1573,11 @@ export const products: Product[] = [
     "id": "99",
     "title": "Amanita Muscaria",
     "artist": "Kapsule Originals",
-    "description": "Amanita Muscaria by Kapsule Originals, immortalized in museum-quality acrylic. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
+    "description": "Amanita muscaria (Fly Agaric) contains the psychoactive compounds ibotenic acid and muscimol. Known for its sedative and dissociative properties, it has been used in shamanic traditions for centuries. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
     "price": 129,
     "category": "Psychedelic/Original Art",
     "type": "single",
-    "imageUrl": "https://images.unsplash.com/photo-1504194104404-433180773017?auto=format&fit=crop&q=80&w=1000",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Amanita_muscaria_3_vliegenzwammen_op_rij.jpg/1280px-Amanita_muscaria_3_vliegenzwammen_op_rij.jpg",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",
@@ -1589,7 +1589,119 @@ export const products: Product[] = [
     "id": "100",
     "title": "Neon Nebula",
     "artist": "Kapsule Originals",
-    "description": "Neon Nebula by Kapsule Originals, immortalized in museum-quality acrylic. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
+    "description": "Psilocybin (4-phosphoryloxy-N,N-dimethyltryptamine) is a naturally occurring psychedelic prodrug compound produced by more than 200 species of mushrooms, notably of the Psilocybe genus. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
+    "price": 349,
+    "category": "Psychedelic/Original Art",
+    "type": "triptych",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Psilocybin%2C_Kekul%C3%A9%2C_skeletal_formula_of_canonical_psilocybin.svg/1280px-Psilocybin%2C_Kekul%C3%A9%2C_skeletal_formula_of_canonical_psilocybin.svg.png",
+    "dimensions": "36\" x 12\" (Three 12\" x 12\" panels)",
+    "features": [
+      "Museum-quality acrylic",
+      "French-pleat back",
+      "Seamless alignment"
+    ]
+  },
+  {
+    "id": "101",
+    "title": "Fractal Forest",
+    "artist": "Kapsule Originals",
+    "description": "Psilocin (4-hydroxy-N,N-dimethyltryptamine) is the pharmacologically active agent in the body resulting from the dephosphorylation of psilocybin, interacting primarily with serotonin receptors. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
+    "price": 129,
+    "category": "Psychedelic/Original Art",
+    "type": "single",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Psilocine_skeletal_formula.svg/1280px-Psilocine_skeletal_formula.svg.png",
+    "dimensions": "12\" x 12\"",
+    "features": [
+      "Museum-quality acrylic",
+      "French-pleat back",
+      "Floating effect"
+    ]
+  },
+  {
+    "id": "102",
+    "title": "Electric Dreams",
+    "artist": "Kapsule Originals",
+    "description": "DMT (N,N-Dimethyltryptamine) is a substituted tryptamine found in many plants such as Psychotria viridis. It is known for producing intense, short-acting hallucinogenic effects. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
+    "price": 129,
+    "category": "Psychedelic/Original Art",
+    "type": "single",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/DMT.svg/1280px-DMT.svg.png",
+    "dimensions": "12\" x 12\"",
+    "features": [
+      "Museum-quality acrylic",
+      "French-pleat back",
+      "Floating effect"
+    ]
+  },
+  {
+    "id": "103",
+    "title": "Celestial Garden",
+    "artist": "Kapsule Originals",
+    "description": "Mescaline (3,4,5-trimethoxyphenethylamine) is a naturally occurring alkaloid found in the Peyote cactus (Lophophora williamsii) and San Pedro cactus, inducing a state of altered perception. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
+    "price": 129,
+    "category": "Psychedelic/Original Art",
+    "type": "single",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Mescaline_Structural_Formulae_bondline.svg/1280px-Mescaline_Structural_Formulae_bondline.svg.png",
+    "dimensions": "12\" x 12\"",
+    "features": [
+      "Museum-quality acrylic",
+      "French-pleat back",
+      "Floating effect"
+    ]
+  },
+  {
+    "id": "104",
+    "title": "Prism Pathway",
+    "artist": "Kapsule Originals",
+    "description": "Claviceps purpurea (Ergot) is a fungus that grows on rye and related plants. It is the primary source of ergotamine, used by Albert Hofmann to synthesize LSD-25. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
+    "price": 129,
+    "category": "Psychedelic/Original Art",
+    "type": "single",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Claviceps_purpurea_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-185.jpg",
+    "dimensions": "12\" x 12\"",
+    "features": [
+      "Museum-quality acrylic",
+      "French-pleat back",
+      "Floating effect"
+    ]
+  },
+  {
+    "id": "105",
+    "title": "Liquid Light",
+    "artist": "Kapsule Originals",
+    "description": "Psilocybe cubensis is a species of psychedelic mushroom whose principal active compounds are psilocybin and psilocin. It is the most popular species for mycological research. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
+    "price": 129,
+    "category": "Psychedelic/Original Art",
+    "type": "single",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Cubensis_Xalapa.jpg/1280px-Cubensis_Xalapa.jpg",
+    "dimensions": "12\" x 12\"",
+    "features": [
+      "Museum-quality acrylic",
+      "French-pleat back",
+      "Floating effect"
+    ]
+  },
+  {
+    "id": "106",
+    "title": "Cosmic Mushroom",
+    "artist": "Kapsule Originals",
+    "description": "Lophophora williamsii (Peyote) is a small, spineless cactus containing the psychoactive alkaloid mescaline. It has a long history of ritual use by indigenous peoples. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
+    "price": 129,
+    "category": "Psychedelic/Original Art",
+    "type": "single",
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Peyote_Cactus.jpg",
+    "dimensions": "12\" x 12\"",
+    "features": [
+      "Museum-quality acrylic",
+      "French-pleat back",
+      "Floating effect"
+    ]
+  },
+  {
+    "id": "107",
+    "title": "Astral Plane",
+    "artist": "Kapsule Originals",
+    "description": "A high-fidelity abstract representation of expanded consciousness, illustrating the neural connectivity and pattern recognition associated with altered states of perception. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
     "price": 349,
     "category": "Psychedelic/Original Art",
     "type": "triptych",
@@ -1602,122 +1714,10 @@ export const products: Product[] = [
     ]
   },
   {
-    "id": "101",
-    "title": "Fractal Forest",
-    "artist": "Kapsule Originals",
-    "description": "Fractal Forest by Kapsule Originals, immortalized in museum-quality acrylic. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
-    "price": 129,
-    "category": "Psychedelic/Original Art",
-    "type": "single",
-    "imageUrl": "https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?auto=format&fit=crop&q=80&w=1000",
-    "dimensions": "12\" x 12\"",
-    "features": [
-      "Museum-quality acrylic",
-      "French-pleat back",
-      "Floating effect"
-    ]
-  },
-  {
-    "id": "102",
-    "title": "Electric Dreams",
-    "artist": "Kapsule Originals",
-    "description": "Electric Dreams by Kapsule Originals, immortalized in museum-quality acrylic. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
-    "price": 129,
-    "category": "Psychedelic/Original Art",
-    "type": "single",
-    "imageUrl": "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&q=80&w=1000",
-    "dimensions": "12\" x 12\"",
-    "features": [
-      "Museum-quality acrylic",
-      "French-pleat back",
-      "Floating effect"
-    ]
-  },
-  {
-    "id": "103",
-    "title": "Celestial Garden",
-    "artist": "Kapsule Originals",
-    "description": "Celestial Garden by Kapsule Originals, immortalized in museum-quality acrylic. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
-    "price": 129,
-    "category": "Psychedelic/Original Art",
-    "type": "single",
-    "imageUrl": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=1000",
-    "dimensions": "12\" x 12\"",
-    "features": [
-      "Museum-quality acrylic",
-      "French-pleat back",
-      "Floating effect"
-    ]
-  },
-  {
-    "id": "104",
-    "title": "Prism Pathway",
-    "artist": "Kapsule Originals",
-    "description": "Prism Pathway by Kapsule Originals, immortalized in museum-quality acrylic. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
-    "price": 129,
-    "category": "Psychedelic/Original Art",
-    "type": "single",
-    "imageUrl": "https://images.unsplash.com/photo-1550684376-efcbd6e3f031?auto=format&fit=crop&q=80&w=1000",
-    "dimensions": "12\" x 12\"",
-    "features": [
-      "Museum-quality acrylic",
-      "French-pleat back",
-      "Floating effect"
-    ]
-  },
-  {
-    "id": "105",
-    "title": "Liquid Light",
-    "artist": "Kapsule Originals",
-    "description": "Liquid Light by Kapsule Originals, immortalized in museum-quality acrylic. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
-    "price": 129,
-    "category": "Psychedelic/Original Art",
-    "type": "single",
-    "imageUrl": "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&q=80&w=1000",
-    "dimensions": "12\" x 12\"",
-    "features": [
-      "Museum-quality acrylic",
-      "French-pleat back",
-      "Floating effect"
-    ]
-  },
-  {
-    "id": "106",
-    "title": "Cosmic Mushroom",
-    "artist": "Kapsule Originals",
-    "description": "Cosmic Mushroom by Kapsule Originals, immortalized in museum-quality acrylic. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
-    "price": 129,
-    "category": "Psychedelic/Original Art",
-    "type": "single",
-    "imageUrl": "https://images.unsplash.com/photo-1504194104404-433180773017?auto=format&fit=crop&q=80&w=1000",
-    "dimensions": "12\" x 12\"",
-    "features": [
-      "Museum-quality acrylic",
-      "French-pleat back",
-      "Floating effect"
-    ]
-  },
-  {
-    "id": "107",
-    "title": "Astral Plane",
-    "artist": "Kapsule Originals",
-    "description": "Astral Plane by Kapsule Originals, immortalized in museum-quality acrylic. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
-    "price": 349,
-    "category": "Psychedelic/Original Art",
-    "type": "triptych",
-    "imageUrl": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=1000",
-    "dimensions": "36\" x 12\" (Three 12\" x 12\" panels)",
-    "features": [
-      "Museum-quality acrylic",
-      "French-pleat back",
-      "Seamless alignment"
-    ]
-  },
-  {
     "id": "108",
     "title": "Geometric Galaxy",
     "artist": "Kapsule Originals",
-    "description": "Geometric Galaxy by Kapsule Originals, immortalized in museum-quality acrylic. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
+    "description": "Exploration of geometric fractal patterns commonly associated with altered states of perception and the mathematical beauty of the natural world. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
     "price": 129,
     "category": "Psychedelic/Original Art",
     "type": "single",
@@ -1733,11 +1733,11 @@ export const products: Product[] = [
     "id": "109",
     "title": "Melting Moments",
     "artist": "Kapsule Originals",
-    "description": "Melting Moments by Kapsule Originals, immortalized in museum-quality acrylic. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
+    "description": "Captures the fluid nature of visual perception during intense sensory experiences, reflecting the neuroplasticity and cognitive flexibility of the human brain. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
     "price": 129,
     "category": "Psychedelic/Original Art",
     "type": "single",
-    "imageUrl": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=1000",
+    "imageUrl": "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&q=80&w=1000",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",
@@ -1749,11 +1749,11 @@ export const products: Product[] = [
     "id": "110",
     "title": "Vortex Vision",
     "artist": "Kapsule Originals",
-    "description": "Vortex Vision by Kapsule Originals, immortalized in museum-quality acrylic. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
+    "description": "A visual study of the 'vortex' effect often reported in deep meditative or psychedelic states, rendered with exceptional depth and clarity. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
     "price": 349,
     "category": "Psychedelic/Original Art",
     "type": "triptych",
-    "imageUrl": "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&q=80&w=1000",
+    "imageUrl": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=1000",
     "dimensions": "36\" x 12\" (Three 12\" x 12\" panels)",
     "features": [
       "Museum-quality acrylic",
@@ -1765,11 +1765,11 @@ export const products: Product[] = [
     "id": "111",
     "title": "Spirit Guide",
     "artist": "Kapsule Originals",
-    "description": "Spirit Guide by Kapsule Originals, immortalized in museum-quality acrylic. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
+    "description": "Representing the 'entity' or 'guide' archetypes frequently encountered in transcendental journeys across various global cultures and traditions. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
     "price": 129,
     "category": "Psychedelic/Original Art",
     "type": "single",
-    "imageUrl": "https://images.unsplash.com/photo-1550684376-efcbd6e3f031?auto=format&fit=crop&q=80&w=1000",
+    "imageUrl": "https://images.unsplash.com/photo-1504194104404-433180773017?auto=format&fit=crop&q=80&w=1000",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",
@@ -1781,11 +1781,11 @@ export const products: Product[] = [
     "id": "112",
     "title": "Technicolor Tundra",
     "artist": "Kapsule Originals",
-    "description": "Technicolor Tundra by Kapsule Originals, immortalized in museum-quality acrylic. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
+    "description": "A vibrant landscape transformation reflecting the enhanced color saturation and hyper-reality often experienced in the natural world during altered states. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
     "price": 129,
     "category": "Psychedelic/Original Art",
     "type": "single",
-    "imageUrl": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=1000",
+    "imageUrl": "https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?auto=format&fit=crop&q=80&w=1000",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",
@@ -1797,11 +1797,11 @@ export const products: Product[] = [
     "id": "113",
     "title": "Dream Weaver",
     "artist": "Kapsule Originals",
-    "description": "Dream Weaver by Kapsule Originals, immortalized in museum-quality acrylic. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
+    "description": "A complex web of interconnected thoughts and visions, illustrating the synaptic pruning and network crosstalk associated with mind-expanding compounds. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.",
     "price": 129,
     "category": "Psychedelic/Original Art",
     "type": "single",
-    "imageUrl": "https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=1000",
+    "imageUrl": "https://images.unsplash.com/photo-1520034475321-cbe63696469a?auto=format&fit=crop&q=80&w=1000",
     "dimensions": "12\" x 12\"",
     "features": [
       "Museum-quality acrylic",

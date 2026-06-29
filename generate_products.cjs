@@ -114,21 +114,21 @@ const genres = {
     { title: 'Knowledge is power', artist: 'Francis Bacon', year: 1597, quote: 'Knowledge is power' }
   ],
   'Psychedelic/Original Art': [
-    { title: 'Amanita Muscaria', artist: 'Kapsule Originals' },
-    { title: 'Neon Nebula', artist: 'Kapsule Originals' },
-    { title: 'Fractal Forest', artist: 'Kapsule Originals' },
-    { title: 'Electric Dreams', artist: 'Kapsule Originals' },
-    { title: 'Celestial Garden', artist: 'Kapsule Originals' },
-    { title: 'Prism Pathway', artist: 'Kapsule Originals' },
-    { title: 'Liquid Light', artist: 'Kapsule Originals' },
-    { title: 'Cosmic Mushroom', artist: 'Kapsule Originals' },
-    { title: 'Astral Plane', artist: 'Kapsule Originals' },
-    { title: 'Geometric Galaxy', artist: 'Kapsule Originals' },
-    { title: 'Melting Moments', artist: 'Kapsule Originals' },
-    { title: 'Vortex Vision', artist: 'Kapsule Originals' },
-    { title: 'Spirit Guide', artist: 'Kapsule Originals' },
-    { title: 'Technicolor Tundra', artist: 'Kapsule Originals' },
-    { title: 'Dream Weaver', artist: 'Kapsule Originals' }
+    { title: 'Amanita Muscaria', artist: 'Kapsule Originals', scientificDescription: 'Amanita muscaria (Fly Agaric) contains the psychoactive compounds ibotenic acid and muscimol. Known for its sedative and dissociative properties, it has been used in shamanic traditions for centuries.' },
+    { title: 'Neon Nebula', artist: 'Kapsule Originals', scientificDescription: 'Psilocybin (4-phosphoryloxy-N,N-dimethyltryptamine) is a naturally occurring psychedelic prodrug compound produced by more than 200 species of mushrooms, notably of the Psilocybe genus.' },
+    { title: 'Fractal Forest', artist: 'Kapsule Originals', scientificDescription: 'Psilocin (4-hydroxy-N,N-dimethyltryptamine) is the pharmacologically active agent in the body resulting from the dephosphorylation of psilocybin, interacting primarily with serotonin receptors.' },
+    { title: 'Electric Dreams', artist: 'Kapsule Originals', scientificDescription: 'DMT (N,N-Dimethyltryptamine) is a substituted tryptamine found in many plants such as Psychotria viridis. It is known for producing intense, short-acting hallucinogenic effects.' },
+    { title: 'Celestial Garden', artist: 'Kapsule Originals', scientificDescription: 'Mescaline (3,4,5-trimethoxyphenethylamine) is a naturally occurring alkaloid found in the Peyote cactus (Lophophora williamsii) and San Pedro cactus, inducing a state of altered perception.' },
+    { title: 'Prism Pathway', artist: 'Kapsule Originals', scientificDescription: 'Claviceps purpurea (Ergot) is a fungus that grows on rye and related plants. It is the primary source of ergotamine, used by Albert Hofmann to synthesize LSD-25.' },
+    { title: 'Liquid Light', artist: 'Kapsule Originals', scientificDescription: 'Psilocybe cubensis is a species of psychedelic mushroom whose principal active compounds are psilocybin and psilocin. It is the most popular species for mycological research.' },
+    { title: 'Cosmic Mushroom', artist: 'Kapsule Originals', scientificDescription: 'Lophophora williamsii (Peyote) is a small, spineless cactus containing the psychoactive alkaloid mescaline. It has a long history of ritual use by indigenous peoples.' },
+    { title: 'Astral Plane', artist: 'Kapsule Originals', scientificDescription: 'A high-fidelity abstract representation of expanded consciousness, illustrating the neural connectivity and pattern recognition associated with altered states of perception.' },
+    { title: 'Geometric Galaxy', artist: 'Kapsule Originals', scientificDescription: 'Exploration of geometric fractal patterns commonly associated with altered states of perception and the mathematical beauty of the natural world.' },
+    { title: 'Melting Moments', artist: 'Kapsule Originals', scientificDescription: 'Captures the fluid nature of visual perception during intense sensory experiences, reflecting the neuroplasticity and cognitive flexibility of the human brain.' },
+    { title: 'Vortex Vision', artist: 'Kapsule Originals', scientificDescription: 'A visual study of the \'vortex\' effect often reported in deep meditative or psychedelic states, rendered with exceptional depth and clarity.' },
+    { title: 'Spirit Guide', artist: 'Kapsule Originals', scientificDescription: 'Representing the \'entity\' or \'guide\' archetypes frequently encountered in transcendental journeys across various global cultures and traditions.' },
+    { title: 'Technicolor Tundra', artist: 'Kapsule Originals', scientificDescription: 'A vibrant landscape transformation reflecting the enhanced color saturation and hyper-reality often experienced in the natural world during altered states.' },
+    { title: 'Dream Weaver', artist: 'Kapsule Originals', scientificDescription: 'A complex web of interconnected thoughts and visions, illustrating the synaptic pruning and network crosstalk associated with mind-expanding compounds.' }
   ]
 };
 
@@ -212,21 +212,21 @@ async function generate() {
     'Knowledge is power': 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&q=80&w=1000',
 
     // Psychedelic
-    'Amanita Muscaria': 'https://images.unsplash.com/photo-1504194104404-433180773017?auto=format&fit=crop&q=80&w=1000',
-    'Neon Nebula': 'https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=1000',
-    'Fractal Forest': 'https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?auto=format&fit=crop&q=80&w=1000',
-    'Electric Dreams': 'https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&q=80&w=1000',
-    'Celestial Garden': 'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=1000',
-    'Prism Pathway': 'https://images.unsplash.com/photo-1550684376-efcbd6e3f031?auto=format&fit=crop&q=80&w=1000',
-    'Liquid Light': 'https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&q=80&w=1000',
-    'Cosmic Mushroom': 'https://images.unsplash.com/photo-1504194104404-433180773017?auto=format&fit=crop&q=80&w=1000',
-    'Astral Plane': 'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=1000',
+    'Amanita Muscaria': 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Amanita_muscaria_3_vliegenzwammen_op_rij.jpg/1280px-Amanita_muscaria_3_vliegenzwammen_op_rij.jpg',
+    'Neon Nebula': 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Psilocybin%2C_Kekul%C3%A9%2C_skeletal_formula_of_canonical_psilocybin.svg/1280px-Psilocybin%2C_Kekul%C3%A9%2C_skeletal_formula_of_canonical_psilocybin.svg.png',
+    'Fractal Forest': 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Psilocine_skeletal_formula.svg/1280px-Psilocine_skeletal_formula.svg.png',
+    'Electric Dreams': 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/DMT.svg/1280px-DMT.svg.png',
+    'Celestial Garden': 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Mescaline_Structural_Formulae_bondline.svg/1280px-Mescaline_Structural_Formulae_bondline.svg.png',
+    'Prism Pathway': 'https://upload.wikimedia.org/wikipedia/commons/2/26/Claviceps_purpurea_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-185.jpg',
+    'Liquid Light': 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Cubensis_Xalapa.jpg/1280px-Cubensis_Xalapa.jpg',
+    'Cosmic Mushroom': 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Peyote_Cactus.jpg',
+    'Astral Plane': 'https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=1000',
     'Geometric Galaxy': 'https://images.unsplash.com/photo-1550684376-efcbd6e3f031?auto=format&fit=crop&q=80&w=1000',
-    'Melting Moments': 'https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=1000',
-    'Vortex Vision': 'https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&q=80&w=1000',
-    'Spirit Guide': 'https://images.unsplash.com/photo-1550684376-efcbd6e3f031?auto=format&fit=crop&q=80&w=1000',
-    'Technicolor Tundra': 'https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&q=80&w=1000',
-    'Dream Weaver': 'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=1000'
+    'Melting Moments': 'https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?auto=format&fit=crop&q=80&w=1000',
+    'Vortex Vision': 'https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&q=80&w=1000',
+    'Spirit Guide': 'https://images.unsplash.com/photo-1504194104404-433180773017?auto=format&fit=crop&q=80&w=1000',
+    'Technicolor Tundra': 'https://images.unsplash.com/photo-1506146332389-18140dc7b2fb?auto=format&fit=crop&q=80&w=1000',
+    'Dream Weaver': 'https://images.unsplash.com/photo-1520034475321-cbe63696469a?auto=format&fit=crop&q=80&w=1000'
   };
 
   let globalIndex = 1;
@@ -261,13 +261,15 @@ async function generate() {
           description = `Released in ${item.year}, ${item.title} by ${item.artist} spent ${item.weeksAtNo1 || 0} weeks at #1 on the Billboard 200, sold ${item.salesMillion || 0} million copies worldwide, and won ${item.grammys || 0} Grammy awards. ${item.title} is widely regarded as one of the greatest albums of all time, shaping ${genre} for generations to come. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.`;
         }
       } else if (genre === 'Movie Scenes') {
-        description = `Released in ${item.year}, ${item.title} grossed over $${item.boxOffice}M at the global box office. Directed by ${item.director} and starring ${item.stars}, it won ${item.academyAwards} Academy Awards and holds a ${item.rottenTomatoes}% rating on Rotten Tomatoes. The ${item.sceneName} scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.`;
+        description = `Released in ${item.year}, ${item.title} grossed over $${item.boxOffice}M at the global box office. Directed by ${item.director} and starring ${item.stars}, it won ${item.academyAwards} Academy Awards and holds a ${item.rottenTomatoes}% rating on Rotten Tomatoes. The ${item.sceneName} scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 24x36 acrylic — a true Kulture Kapsule.`;
         price = 500;
         type = 'single';
-        dimensions = '27" x 40"';
+        dimensions = '24" x 36"';
         features = ["Museum-quality acrylic", "French-pleat back", "Full-size movie poster format", "Floating effect"];
       } else if (genre === 'Quotes') {
         description = `Spoken by ${item.artist} in ${item.year}, '${item.quote}' has become one of the most referenced, parodied, and culturally significant phrases in history. Whether from film, literature, or history, these words continue to resonate across generations. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.`;
+      } else if (genre === 'Psychedelic/Original Art') {
+        description = `${item.scientificDescription} Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.`;
       } else {
         description = `${item.title} by ${item.artist}, immortalized in museum-quality acrylic. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.`;
       }

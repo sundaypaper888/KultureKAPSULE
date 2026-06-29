@@ -8,7 +8,9 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
 
 const PRINTIFY_KEY = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIzN2Q0YmQzMDM1ZmUxMWU5YTgwM2FiN2VlYjNjY2M5NyIsImp0aSI6ImY4NjNmNTFhOWZlYzI2OTRjNmRjNTczMDUyNzg0Zjg5ODAxMzEwYTI1MTA0M2YyZTY3OTdhY2E1NjQ3ZjVlZjE1ZTM5OTVkOTQ3Yjg1YTViIiwiaWF0IjoxNzgyNjg5NzM1LjgyNzcwNSwibmJmIjoxNzgyNjg5NzM1LjgyNzcwNywiZXhwIjoxODE0MjI1NzM1LjgyMjQ3Mywic3ViIjoiOTQ0ODMyOSIsInNjb3BlcyI6WyJzaG9wcy5tYW5hZ2UiLCJzaG9wcy5yZWFkIiwiY2F0YWxvZy5yZWFkIiwib3JkZXJzLnJlYWQiLCJvcmRlcnMud3JpdGUiLCJwcm9kdWN0cy5yZWFkIiwicHJvZHVjdHMud3JpdGUiLCJ3ZWJob29rcy5yZWFkIiwid2ViaG9va3Mud3JpdGUiLCJ1cGxvYWRzLnJlYWQiLCJ1cGxvYWRzLndyaXRlIiwicHJpbnRfcHJvdmlkZXJzLnJlYWQiLCJ1c2VyLmluZm8iXX0.PrUFcWYlsLVdW22HlUTPMUtNNkaZa9A3kdHVkiHCbNuADQ692Uip3adwUa1hWmp99Ce3R5UUGDjInKDh59E5P7ZE-D6_yD0QWEV2Qo3_tTGdx-1SDSwdgi-ugZ6jZo_FC4v6E3aU0YV_Nh_p2QN23cJ-W_SZNMq-i5VBxjGB_HH1f2dEBRsPOdVt52ji8gVjevu3NmRneVwLxhbku0CN-gRpeRWEnD-vbFXX6qmpx1CW7hC_QXHmww2WUvCuuYpqBylaZu8d4I6BENmsuwRR5XxSqjcxfVXjGitpLriRLYt64UArCc1n1yXGxCuTQcRt3Gv_-Y3qz4fWWuyfDPMs-iac5GXO3Imiv2ZlbAHj-sbu4lxC4qpQt78NuIKIijdGcwGR1TwCRIj5ZVUId4RnT-d2DAMNc0fBQE_JVh3muM4oJaC57oqfXeU9b95pW0kM6B2rR3oXFsqM9QUiFX-TE4MneqUf9YtaJ1t8RQA8MXKM3wssH4MiElGM8Cf7FdAkBkTEXaipvgCcxkwR9KsFyzz_g1Ab9cs9hoq72CbE8DnCK2TFogS0IMSYH2vY3qhy31Z5G5-obX9zby1JWCC79RDqFdckat2dT76kFE7wmsWUJTPzjko8u5cxKUBdKmxJVaPtqb2izbQt39llD_C5dxiL4WJ-Y15aMV1bW4ZvJVs';
 const SHOP_ID = '9827741';
-const PRINTIFY_PRODUCT_ID = '696466519cb911449507b6a7';
+const BLUEPRINT_SINGLE = 928;
+const BLUEPRINT_TRIPTYCH = 961;
+const PRINT_PROVIDER_ID = 104;
 
 export const config = {
   api: {
@@ -50,17 +52,21 @@ export default async function handler(req: any, res: any) {
         const product = item.price.product as Stripe.Product;
         const metadata = product.metadata || {};
         
+        let blueprintId = BLUEPRINT_SINGLE;
         let variantId = 78325; // Default 12x12
         let quantity = item.quantity;
 
         if (metadata.type === 'triptych') {
-          quantity = item.quantity * 3;
+          blueprintId = BLUEPRINT_TRIPTYCH;
+          variantId = 78407; // 36x12 Horizontal Triptych
+          quantity = item.quantity; // Blueprint 961 is the triptych itself, so quantity 1
         } else if (metadata.category === 'Movie Scenes') {
           variantId = 78321; // 24x36 Vertical (Premium Large)
         }
 
         return {
-          product_id: PRINTIFY_PRODUCT_ID,
+          blueprint_id: blueprintId,
+          print_provider_id: PRINT_PROVIDER_ID,
           variant_id: variantId,
           quantity: quantity,
           print_areas: {
