@@ -4,114 +4,114 @@ const path = require('path');
 
 const genres = {
   'Hip-Hop': [
-    { title: 'The Chronic', artist: 'Dr. Dre' },
-    { title: 'Paid in Full', artist: 'Eric B. & Rakim' },
-    { title: 'Illmatic', artist: 'Nas' },
-    { title: 'Ready to Die', artist: 'The Notorious B.I.G.' },
-    { title: 'Enter the Wu-Tang (36 Chambers)', artist: 'Wu-Tang Clan' },
-    { title: 'The Low End Theory', artist: 'A Tribe Called Quest' },
-    { title: 'Midnight Marauders', artist: 'A Tribe Called Quest' },
-    { title: 'Reasonable Doubt', artist: 'Jay-Z' },
-    { title: 'Life After Death', artist: 'The Notorious B.I.G.' },
-    { title: 'Aquemini', artist: 'OutKast' },
-    { title: 'The Miseducation of Lauryn Hill', artist: 'Lauryn Hill' },
-    { title: '2001', artist: 'Dr. Dre' },
-    { title: 'Get Rich or Die Tryin\'', artist: '50 Cent' },
-    { title: 'Late Registration', artist: 'Kanye West' },
-    { title: 'good kid, m.A.A.d city', artist: 'Kendrick Lamar' }
+    { title: 'The Chronic', artist: 'Dr. Dre', year: 1992, weeksAtNo1: 0, salesMillion: 3, grammys: 1 },
+    { title: 'Paid in Full', artist: 'Eric B. & Rakim', year: 1987, weeksAtNo1: 0, salesMillion: 1, grammys: 0 },
+    { title: 'Illmatic', artist: 'Nas', year: 1994, weeksAtNo1: 0, salesMillion: 2, grammys: 0 },
+    { title: 'Ready to Die', artist: 'The Notorious B.I.G.', year: 1994, weeksAtNo1: 0, salesMillion: 6, grammys: 0 },
+    { title: 'Enter the Wu-Tang (36 Chambers)', artist: 'Wu-Tang Clan', year: 1993, weeksAtNo1: 0, salesMillion: 3, grammys: 0 },
+    { title: 'The Low End Theory', artist: 'A Tribe Called Quest', year: 1991, weeksAtNo1: 0, salesMillion: 1, grammys: 0 },
+    { title: 'Midnight Marauders', artist: 'A Tribe Called Quest', year: 1993, weeksAtNo1: 0, salesMillion: 1, grammys: 0 },
+    { title: 'Reasonable Doubt', artist: 'Jay-Z', year: 1996, weeksAtNo1: 0, salesMillion: 1, grammys: 0 },
+    { title: 'Life After Death', artist: 'The Notorious B.I.G.', year: 1997, weeksAtNo1: 4, salesMillion: 11, grammys: 0 },
+    { title: 'Aquemini', artist: 'OutKast', year: 1998, weeksAtNo1: 0, salesMillion: 2, grammys: 0 },
+    { title: 'The Miseducation of Lauryn Hill', artist: 'Lauryn Hill', year: 1998, weeksAtNo1: 4, salesMillion: 20, grammys: 5 },
+    { title: '2001', artist: 'Dr. Dre', year: 1999, weeksAtNo1: 0, salesMillion: 6, grammys: 1 },
+    { title: 'Get Rich or Die Tryin\'', artist: '50 Cent', year: 2003, weeksAtNo1: 6, salesMillion: 9, grammys: 1 },
+    { title: 'Late Registration', artist: 'Kanye West', year: 2005, weeksAtNo1: 2, salesMillion: 3, grammys: 3 },
+    { title: 'good kid, m.A.A.d city', artist: 'Kendrick Lamar', year: 2012, weeksAtNo1: 0, salesMillion: 3, grammys: 7 }
   ],
   'Rock': [
-    { title: 'Nevermind', artist: 'Nirvana' },
-    { title: 'Dark Side of the Moon', artist: 'Pink Floyd' },
-    { title: 'Abbey Road', artist: 'The Beatles' },
-    { title: 'Led Zeppelin IV', artist: 'Led Zeppelin' },
-    { title: 'Hotel California', artist: 'Eagles' },
-    { title: 'Back in Black', artist: 'AC/DC' },
-    { title: 'Rumours', artist: 'Fleetwood Mac' },
-    { title: 'Born to Run', artist: 'Bruce Springsteen' },
-    { title: 'The Wall', artist: 'Pink Floyd' },
-    { title: 'Appetite for Destruction', artist: 'Guns N\' Roses' },
-    { title: 'Achtung Baby', artist: 'U2' },
-    { title: 'OK Computer', artist: 'Radiohead' },
-    { title: 'Is This It', artist: 'The Strokes' },
-    { title: 'London Calling', artist: 'The Clash' },
-    { title: 'Elephant', artist: 'The White Stripes' }
+    { title: 'Nevermind', artist: 'Nirvana', year: 1991, weeksAtNo1: 2, salesMillion: 30, grammys: 2 },
+    { title: 'Dark Side of the Moon', artist: 'Pink Floyd', year: 1973, weeksAtNo1: 1, salesMillion: 45, grammys: 1 },
+    { title: 'Abbey Road', artist: 'The Beatles', year: 1969, weeksAtNo1: 11, salesMillion: 12, grammys: 1 },
+    { title: 'Led Zeppelin IV', artist: 'Led Zeppelin', year: 1971, weeksAtNo1: 0, salesMillion: 37, grammys: 0 },
+    { title: 'Hotel California', artist: 'Eagles', year: 1976, weeksAtNo1: 8, salesMillion: 32, grammys: 2 },
+    { title: 'Back in Black', artist: 'AC/DC', year: 1980, weeksAtNo1: 0, salesMillion: 50, grammys: 0 },
+    { title: 'Rumours', artist: 'Fleetwood Mac', year: 1977, weeksAtNo1: 31, salesMillion: 40, grammys: 1 },
+    { title: 'Born to Run', artist: 'Bruce Springsteen', year: 1975, weeksAtNo1: 0, salesMillion: 6, grammys: 0 },
+    { title: 'The Wall', artist: 'Pink Floyd', year: 1979, weeksAtNo1: 15, salesMillion: 23, grammys: 1 },
+    { title: 'Appetite for Destruction', artist: 'Guns N\' Roses', year: 1987, weeksAtNo1: 5, salesMillion: 30, grammys: 0 },
+    { title: 'Achtung Baby', artist: 'U2', year: 1991, weeksAtNo1: 1, salesMillion: 18, grammys: 1 },
+    { title: 'OK Computer', artist: 'Radiohead', year: 1997, weeksAtNo1: 0, salesMillion: 5, grammys: 1 },
+    { title: 'Is This It', artist: 'The Strokes', year: 2001, weeksAtNo1: 0, salesMillion: 2, grammys: 1 },
+    { title: 'London Calling', artist: 'The Clash', year: 1979, weeksAtNo1: 0, salesMillion: 5, grammys: 0 },
+    { title: 'Elephant', artist: 'The White Stripes', year: 2003, weeksAtNo1: 0, salesMillion: 4, grammys: 2 }
   ],
   'Classical': [
-    { title: 'Beethoven Symphony No. 5', artist: 'Ludwig van Beethoven' },
-    { title: 'The Four Seasons', artist: 'Antonio Vivaldi' },
-    { title: 'Clair de Lune', artist: 'Claude Debussy' },
-    { title: 'Canon in D', artist: 'Johann Pachelbel' },
-    { title: 'Symphony No. 9', artist: 'Ludwig van Beethoven' },
-    { title: 'Eine Kleine Nachtmusik', artist: 'Wolfgang Amadeus Mozart' },
-    { title: 'Nocturnes', artist: 'Frédéric Chopin' },
-    { title: 'The Planets', artist: 'Gustav Holst' },
-    { title: 'The Blue Danube', artist: 'Johann Strauss II' },
-    { title: 'Peer Gynt', artist: 'Edvard Grieg' },
-    { title: 'Swan Lake', artist: 'Pyotr Ilyich Tchaikovsky' },
-    { title: 'Boléro', artist: 'Maurice Ravel' },
-    { title: 'The Nutcracker', artist: 'Pyotr Ilyich Tchaikovsky' },
-    { title: 'Also Sprach Zarathustra', artist: 'Richard Strauss' },
-    { title: 'Air on the G String', artist: 'Johann Sebastian Bach' }
+    { title: 'Beethoven Symphony No. 5', artist: 'Ludwig van Beethoven', year: 1808, generalImpact: 'One of the most recognizable compositions in classical music' },
+    { title: 'The Four Seasons', artist: 'Antonio Vivaldi', year: 1723, generalImpact: 'Revolutionized the concerto form' },
+    { title: 'Clair de Lune', artist: 'Claude Debussy', year: 1905, generalImpact: 'An impressionist masterpiece for piano' },
+    { title: 'Canon in D', artist: 'Johann Pachelbel', year: 1680, generalImpact: 'The most popular wedding processional in history' },
+    { title: 'Symphony No. 9', artist: 'Ludwig van Beethoven', year: 1824, generalImpact: 'A monumental work featuring the "Ode to Joy"' },
+    { title: 'Eine Kleine Nachtmusik', artist: 'Wolfgang Amadeus Mozart', year: 1787, generalImpact: 'The quintessential example of the Serenade form' },
+    { title: 'Nocturnes', artist: 'Frédéric Chopin', year: 1832, generalImpact: 'Defined the romantic piano nocturne' },
+    { title: 'The Planets', artist: 'Gustav Holst', year: 1916, generalImpact: 'A celestial journey that influenced modern film scores' },
+    { title: 'The Blue Danube', artist: 'Johann Strauss II', year: 1866, generalImpact: 'The unofficial national anthem of Austria' },
+    { title: 'Peer Gynt', artist: 'Edvard Grieg', year: 1875, generalImpact: 'Captures the magic and mystery of Scandinavian folklore' },
+    { title: 'Swan Lake', artist: 'Pyotr Ilyich Tchaikovsky', year: 1876, generalImpact: 'The world\'s most beloved and enduring ballet' },
+    { title: 'Boléro', artist: 'Maurice Ravel', year: 1928, generalImpact: 'A hypnotic study in orchestral crescendo' },
+    { title: 'The Nutcracker', artist: 'Pyotr Ilyich Tchaikovsky', year: 1892, generalImpact: 'An annual Christmas tradition worldwide' },
+    { title: 'Also Sprach Zarathustra', artist: 'Richard Strauss', year: 1896, generalImpact: 'Famous for its powerful opening, immortalized in "2001: A Space Odyssey"' },
+    { title: 'Air on the G String', artist: 'Johann Sebastian Bach', year: 1723, generalImpact: 'A timeless expression of Baroque elegance and serenity' }
   ],
   'Top 40s': [
-    { title: 'Thriller', artist: 'Michael Jackson' },
-    { title: 'Purple Rain', artist: 'Prince' },
-    { title: 'Rumours', artist: 'Fleetwood Mac' },
-    { title: 'Saturday Night Fever', artist: 'Bee Gees' },
-    { title: 'Like a Prayer', artist: 'Madonna' },
-    { title: 'Bad', artist: 'Michael Jackson' },
-    { title: 'The Bodyguard', artist: 'Whitney Houston' },
-    { title: 'Jagged Little Pill', artist: 'Alanis Morissette' },
-    { title: 'Come On Over', artist: 'Shania Twain' },
-    { title: 'Let\'s Dance', artist: 'David Bowie' },
-    { title: 'True Blue', artist: 'Madonna' },
-    { title: 'Faith', artist: 'George Michael' },
-    { title: '1999', artist: 'Prince' },
-    { title: 'Born in the USA', artist: 'Bruce Springsteen' },
-    { title: 'Like a Virgin', artist: 'Madonna' }
+    { title: 'Thriller', artist: 'Michael Jackson', year: 1982, weeksAtNo1: 37, salesMillion: 70, grammys: 8 },
+    { title: 'Purple Rain', artist: 'Prince', year: 1984, weeksAtNo1: 24, salesMillion: 25, grammys: 1 },
+    { title: 'Rumours', artist: 'Fleetwood Mac', year: 1977, weeksAtNo1: 31, salesMillion: 40, grammys: 1 },
+    { title: 'Saturday Night Fever', artist: 'Bee Gees', year: 1977, weeksAtNo1: 24, salesMillion: 40, grammys: 5 },
+    { title: 'Like a Prayer', artist: 'Madonna', year: 1989, weeksAtNo1: 6, salesMillion: 15, grammys: 0 },
+    { title: 'Bad', artist: 'Michael Jackson', year: 1987, weeksAtNo1: 6, salesMillion: 35, grammys: 2 },
+    { title: 'The Bodyguard', artist: 'Whitney Houston', year: 1992, weeksAtNo1: 20, salesMillion: 45, grammys: 3 },
+    { title: 'Jagged Little Pill', artist: 'Alanis Morissette', year: 1995, weeksAtNo1: 12, salesMillion: 33, grammys: 5 },
+    { title: 'Come On Over', artist: 'Shania Twain', year: 1997, weeksAtNo1: 0, salesMillion: 40, grammys: 2 },
+    { title: 'Let\'s Dance', artist: 'David Bowie', year: 1983, weeksAtNo1: 0, salesMillion: 10, grammys: 0 },
+    { title: 'True Blue', artist: 'Madonna', year: 1986, weeksAtNo1: 5, salesMillion: 25, grammys: 0 },
+    { title: 'Faith', artist: 'George Michael', year: 1987, weeksAtNo1: 12, salesMillion: 20, grammys: 2 },
+    { title: '1999', artist: 'Prince', year: 1982, weeksAtNo1: 0, salesMillion: 4, grammys: 0 },
+    { title: 'Born in the USA', artist: 'Bruce Springsteen', year: 1984, weeksAtNo1: 7, salesMillion: 30, grammys: 1 },
+    { title: 'Like a Virgin', artist: 'Madonna', year: 1984, weeksAtNo1: 3, salesMillion: 21, grammys: 0 }
   ],
   'Movie Scenes': [
-    { title: 'Pulp Fiction Dance', description: 'The iconic Jack Rabbit Slims dance scene.' },
-    { title: 'The Godfather', description: 'The classic puppet-string logo.' },
-    { title: 'Paid in Full', description: 'The legendary money stack scene.' },
-    { title: 'Fight Club', description: 'The final scene overlooking the skyline.' },
-    { title: 'Scarface', description: 'The "Say Hello to My Little Friend" moment.' },
-    { title: 'Blade Runner 2049', description: 'The atmospheric neon cityscape.' },
-    { title: 'The Matrix', description: 'The falling green code rain.' },
-    { title: 'Inception', description: 'The spinning top on the table.' },
-    { title: 'Star Wars', description: 'The twin sunset on Tatooine.' },
-    { title: 'Jurassic Park', description: 'The first T-Rex reveal in the rain.' },
-    { title: 'Eternal Sunshine', description: 'The couple lying on the frozen lake.' },
-    { title: 'Taxi Driver', description: 'Travis Bickle in the neon night.' },
-    { title: 'La La Land', description: 'The sunset dance overlooking LA.' },
-    { title: 'Moonlight', description: 'The iconic blue-tinted portrait.' },
-    { title: 'Parasite', description: 'The minimalist basement window view.' },
-    { title: 'Friday', description: 'The legendary "Bye Felicia" moment.' },
-    { title: 'The Color Purple', description: 'A story of sisterhood and resilience.' },
-    { title: 'Grease', description: 'Summer nights and high school dreams.' },
-    { title: 'Madea\'s Family Reunion', description: 'Family, faith, and fun.' },
-    { title: 'Bad Boys', description: 'Ride together, die together.' },
-    { title: 'Training Day', description: 'King Kong ain\'t got nothing on me.' },
-    { title: 'The Devil Wears Prada', description: 'Fashion is a battlefield.' },
-    { title: 'Shottas', description: 'The raw street culture of Kingston.' }
+    { title: 'Pulp Fiction Dance', year: 1994, boxOffice: 214, director: 'Quentin Tarantino', stars: 'John Travolta, Uma Thurman and Samuel L. Jackson', academyAwards: 1, rottenTomatoes: 92, sceneName: 'Jack Rabbit Slims dance' },
+    { title: 'The Godfather', year: 1972, boxOffice: 250, director: 'Francis Ford Coppola', stars: 'Marlon Brando and Al Pacino', academyAwards: 3, rottenTomatoes: 97, sceneName: 'opening wedding' },
+    { title: 'Paid in Full', year: 2002, boxOffice: 3, director: 'Charles Stone III', stars: 'Wood Harris and Mekhi Phifer', academyAwards: 0, rottenTomatoes: 53, sceneName: 'money stack' },
+    { title: 'Fight Club', year: 1999, boxOffice: 101, director: 'David Fincher', stars: 'Brad Pitt and Edward Norton', academyAwards: 0, rottenTomatoes: 79, sceneName: 'skyline ending' },
+    { title: 'Scarface', year: 1983, boxOffice: 66, director: 'Brian De Palma', stars: 'Al Pacino', academyAwards: 0, rottenTomatoes: 79, sceneName: '"Say Hello to My Little Friend"' },
+    { title: 'Blade Runner 2049', year: 2017, boxOffice: 259, director: 'Denis Villeneuve', stars: 'Ryan Gosling and Harrison Ford', academyAwards: 2, rottenTomatoes: 88, sceneName: 'neon cityscape' },
+    { title: 'The Matrix', year: 1999, boxOffice: 467, director: 'The Wachowskis', stars: 'Keanu Reeves', academyAwards: 4, rottenTomatoes: 83, sceneName: 'code rain' },
+    { title: 'Inception', year: 2010, boxOffice: 836, director: 'Christopher Nolan', stars: 'Leonardo DiCaprio', academyAwards: 4, rottenTomatoes: 87, sceneName: 'spinning top' },
+    { title: 'Star Wars', year: 1977, boxOffice: 775, director: 'George Lucas', stars: 'Mark Hamill and Harrison Ford', academyAwards: 6, rottenTomatoes: 93, sceneName: 'twin sunset' },
+    { title: 'Jurassic Park', year: 1993, boxOffice: 1033, director: 'Steven Spielberg', stars: 'Sam Neill and Laura Dern', academyAwards: 3, rottenTomatoes: 91, sceneName: 'T-Rex reveal' },
+    { title: 'Eternal Sunshine', year: 2004, boxOffice: 74, director: 'Michel Gondry', stars: 'Jim Carrey and Kate Winslet', academyAwards: 1, rottenTomatoes: 92, sceneName: 'frozen lake' },
+    { title: 'Taxi Driver', year: 1976, boxOffice: 28, director: 'Martin Scorsese', stars: 'Robert De Niro', academyAwards: 0, rottenTomatoes: 89, sceneName: 'neon night' },
+    { title: 'La La Land', year: 2016, boxOffice: 448, director: 'Damien Chazelle', stars: 'Ryan Gosling and Emma Stone', academyAwards: 6, rottenTomatoes: 91, sceneName: 'sunset dance' },
+    { title: 'Moonlight', year: 2016, boxOffice: 65, director: 'Barry Jenkins', stars: 'Trevante Rhodes', academyAwards: 3, rottenTomatoes: 98, sceneName: 'blue-tinted portrait' },
+    { title: 'Parasite', year: 2019, boxOffice: 263, director: 'Bong Joon-ho', stars: 'Song Kang-ho', academyAwards: 4, rottenTomatoes: 99, sceneName: 'basement window' },
+    { title: 'Friday', year: 1995, boxOffice: 28, director: 'F. Gary Gray', stars: 'Ice Cube and Chris Tucker', academyAwards: 0, rottenTomatoes: 78, sceneName: '"Bye Felicia"' },
+    { title: 'The Color Purple', year: 1985, boxOffice: 142, director: 'Steven Spielberg', stars: 'Whoopi Goldberg', academyAwards: 0, rottenTomatoes: 73, sceneName: 'sisterhood' },
+    { title: 'Grease', year: 1978, boxOffice: 396, director: 'Randal Kleiser', stars: 'John Travolta and Olivia Newton-John', academyAwards: 0, rottenTomatoes: 75, sceneName: 'summer nights' },
+    { title: 'Madea\'s Family Reunion', year: 2006, boxOffice: 63, director: 'Tyler Perry', stars: 'Tyler Perry', academyAwards: 0, rottenTomatoes: 26, sceneName: 'family reunion' },
+    { title: 'Bad Boys', year: 1995, boxOffice: 141, director: 'Michael Bay', stars: 'Will Smith and Martin Lawrence', academyAwards: 0, rottenTomatoes: 42, sceneName: 'ride together' },
+    { title: 'Training Day', year: 2001, boxOffice: 104, director: 'Antoine Fuqua', stars: 'Denzel Washington and Ethan Hawke', academyAwards: 1, rottenTomatoes: 73, sceneName: 'King Kong' },
+    { title: 'The Devil Wears Prada', year: 2006, boxOffice: 326, director: 'David Frankel', stars: 'Meryl Streep and Anne Hathaway', academyAwards: 0, rottenTomatoes: 75, sceneName: 'fashion battlefield' },
+    { title: 'Shottas', year: 2002, boxOffice: 0.9, director: 'Cess Silvera', stars: 'Ky-Mani Marley and Spragga Benz', academyAwards: 0, rottenTomatoes: 0, sceneName: 'Kingston street' }
   ],
   'Quotes': [
-    { title: 'Stay Hungry, Stay Foolish', artist: 'Steve Jobs' },
-    { title: 'To Be Or Not To Be', artist: 'William Shakespeare' },
-    { title: 'I Have A Dream', artist: 'Martin Luther King Jr.' },
-    { title: 'Imagination is more important than knowledge', artist: 'Albert Einstein' },
-    { title: 'The only thing we have to fear is fear itself', artist: 'Franklin D. Roosevelt' },
-    { title: 'That\'s one small step for man', artist: 'Neil Armstrong' },
-    { title: 'Be the change you wish to see in the world', artist: 'Mahatma Gandhi' },
-    { title: 'In the end, we will remember not the words of our enemies', artist: 'Martin Luther King Jr.' },
-    { title: 'Life is what happens when you\'re making other plans', artist: 'John Lennon' },
-    { title: 'The journey of a thousand miles begins with one step', artist: 'Lao Tzu' },
-    { title: 'Float like a butterfly, sting like a bee', artist: 'Muhammad Ali' },
-    { title: 'Well done is better than well said', artist: 'Benjamin Franklin' },
-    { title: 'Everything you can imagine is real', artist: 'Pablo Picasso' },
-    { title: 'Keep calm and carry on', artist: 'British Government' },
-    { title: 'Knowledge is power', artist: 'Francis Bacon' }
+    { title: 'Stay Hungry, Stay Foolish', artist: 'Steve Jobs', year: 2005, quote: 'Stay Hungry, Stay Foolish' },
+    { title: 'To Be Or Not To Be', artist: 'William Shakespeare', year: 1600, quote: 'To Be Or Not To Be' },
+    { title: 'I Have A Dream', artist: 'Martin Luther King Jr.', year: 1963, quote: 'I Have A Dream' },
+    { title: 'Imagination is more important than knowledge', artist: 'Albert Einstein', year: 1929, quote: 'Imagination is more important than knowledge' },
+    { title: 'The only thing we have to fear is fear itself', artist: 'Franklin D. Roosevelt', year: 1933, quote: 'The only thing we have to fear is fear itself' },
+    { title: 'That\'s one small step for man', artist: 'Neil Armstrong', year: 1969, quote: 'That\'s one small step for man' },
+    { title: 'Be the change you wish to see in the world', artist: 'Mahatma Gandhi', year: 1913, quote: 'Be the change you wish to see in the world' },
+    { title: 'In the end, we will remember not the words of our enemies', artist: 'Martin Luther King Jr.', year: 1967, quote: 'In the end, we will remember not the words of our enemies' },
+    { title: 'Life is what happens when you\'re making other plans', artist: 'John Lennon', year: 1980, quote: 'Life is what happens when you\'re making other plans' },
+    { title: 'The journey of a thousand miles begins with one step', artist: 'Lao Tzu', year: -400, quote: 'The journey of a thousand miles begins with one step' },
+    { title: 'Float like a butterfly, sting like a bee', artist: 'Muhammad Ali', year: 1964, quote: 'Float like a butterfly, sting like a bee' },
+    { title: 'Well done is better than well said', artist: 'Benjamin Franklin', year: 1737, quote: 'Well done is better than well said' },
+    { title: 'Everything you can imagine is real', artist: 'Pablo Picasso', year: 1940, quote: 'Everything you can imagine is real' },
+    { title: 'Keep calm and carry on', artist: 'British Government', year: 1939, quote: 'Keep calm and carry on' },
+    { title: 'Knowledge is power', artist: 'Francis Bacon', year: 1597, quote: 'Knowledge is power' }
   ],
   'Psychedelic/Original Art': [
     { title: 'Amanita Muscaria', artist: 'Kapsule Originals' },
@@ -252,14 +252,24 @@ async function generate() {
       let type = isTriptych ? 'triptych' : 'single';
       let dimensions = isTriptych ? '36" x 12" (Three 12" x 12" panels)' : '12" x 12"';
       let features = ['Museum-quality acrylic', 'French-pleat back', isTriptych ? 'Seamless alignment' : 'Floating effect'];
-      let description = item.description || `${item.title} by ${item.artist}, immortalized in museum-quality acrylic.`;
-
-      if (genre === 'Movie Scenes') {
+      
+      let description = '';
+      if (['Hip-Hop', 'Rock', 'Classical', 'Top 40s'].includes(genre)) {
+        if (genre === 'Classical') {
+          description = `Premiered in ${item.year}, ${item.title} by ${item.artist} is ${item.generalImpact}. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.`;
+        } else {
+          description = `Released in ${item.year}, ${item.title} by ${item.artist} spent ${item.weeksAtNo1 || 0} weeks at #1 on the Billboard 200, sold ${item.salesMillion || 0} million copies worldwide, and won ${item.grammys || 0} Grammy awards. ${item.title} is widely regarded as one of the greatest albums of all time, shaping ${genre} for generations to come. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.`;
+        }
+      } else if (genre === 'Movie Scenes') {
+        description = `Released in ${item.year}, ${item.title} grossed over $${item.boxOffice}M at the global box office. Directed by ${item.director} and starring ${item.stars}, it won ${item.academyAwards} Academy Awards and holds a ${item.rottenTomatoes}% rating on Rotten Tomatoes. The ${item.sceneName} scene became an iconic moment in cinema history, referenced across music, fashion, and pop culture. Preserved here in premium 27x40 acrylic — a true Kulture Kapsule.`;
         price = 500;
         type = 'single';
         dimensions = '27" x 40"';
-        features = ["Museum-quality acrylic", "French-pleat back", "Full-size 27x40 movie poster format", "Floating effect"];
-        description = (item.description || item.title) + " Premium 27x40 vertical acrylic format.";
+        features = ["Museum-quality acrylic", "French-pleat back", "Full-size movie poster format", "Floating effect"];
+      } else if (genre === 'Quotes') {
+        description = `Spoken by ${item.artist} in ${item.year}, '${item.quote}' has become one of the most referenced, parodied, and culturally significant phrases in history. Whether from film, literature, or history, these words continue to resonate across generations. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.`;
+      } else {
+        description = `${item.title} by ${item.artist}, immortalized in museum-quality acrylic. Preserved here in premium museum-quality acrylic — a true Kulture Kapsule.`;
       }
 
       products.push({
