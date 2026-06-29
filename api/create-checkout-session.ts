@@ -18,6 +18,12 @@ export default async function handler(req: any, res: any) {
             name: item.title,
             description: item.artist || item.category,
             images: [item.imageUrl],
+            metadata: {
+              image_url: item.imageUrl,
+              product_id: item.id,
+              category: item.category,
+              type: item.type
+            }
           },
           unit_amount: Math.round(item.price * 100), // Stripe expects cents
         },
